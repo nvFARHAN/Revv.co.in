@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    }
+    #header {
+        border: 1px solid cyan;
+        margin: auto;
+        width: 90%;
+        height: 60px;
+        display: block;
+        background-color: white;
+        display: flex;
+        justify-content:space-between ;  
+        top: 0;
+        font-weight: 100;
+    }
+    .lefthead>div {
+        border: 1px solid black;
+        display: flex;
+        width: 110%; 
+        justify-content: space-between;
+        align-items: center;  
+    }
+    .lefthead>div h1 {
+        color: black;
+        font-family: Poppins;
+        font-weight: 300;
+        font-size: 18px;
+    }
+    #header>img {
+        width: 62x42px;   
+    }
+    #header img:hover {
+        cursor: pointer;
+    }
+    /* right head */
+    .righthead{
+        border: 1px solid black;
+        width: 30%;
+        background-color: antiquewhite; 
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .righthead p{
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 500;
+        color: black;
+        border: 1px solid black;
+    }
+    /* header end  */
+
+    /* subs box :start */
+    #subsbox {
+        border: 1px solid black;
+        background-color: black;
+        width: 99.%;
+        height: 600px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .leftsubsbox {
+        width: 46%;
+        height: 80%;
+        border: 1px solid white;
+       
+    }
+    .rightsubsbox {
+        width: 40%;
+        height: 80%;
+    }
+    /* rightbox */
+    .rightsubsbox>div {
+        background-color: white;
+        margin: -1px;
+        border-radius: 5px;
+        border: 1px solid black;
+        border-radius: 6px;
+        height: 8%;
+        padding: 28px;
+        padding-left: 36px;
+    }
+    .rightsubsbox>div h1 {
+        color: black;
+        /* padding-left: 25px; */
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 6px;
+    }
+    .rightsubsbox>div p {
+        color: black;
+        /* padding-left: 25px; */
+        font-family: Poppins;
+        font-weight: 700;
+        font-size: 24px;
+    }
+    .rightsubsbox>div span {
+        color: rgb(28,171,162);
+        padding-left: 8px;
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 14px;
+    }
+    /* left box. */
+    .leftsubsbox {
+        background-color: white;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .leftsubsbox>div:nth-child(1) {
+        border: 1px solid black;
+        height: 30%;
+        width: 90%;
+    }
+    .leftsubsbox>div:nth-child(1) h1{
+        font-family: Poppins;
+        font-weight: 300;
+        font-size: 16px;
+        text-align: center;
+    }
+    .leftsubsbox>div:nth-child(1) h2{
+        font-family: Poppins;
+        font-weight: 300;
+        font-size: 14px;
+        text-align: center;
+    }
+    .leftsubsbox>div:nth-child(1) h3{
+        color: rgb(90,82,84);
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 18px;
+        margin-top: 5%;
+        text-align: center;
+    }
+
+    .leftsubsbox>div:nth-child(2) {
+        border: 1px solid black;
+        height: 50%;
+        width: 90%;
+    }
+
+    /* <--how it works  */
+    #howitworks {
+        width: 100%;
+        height: 600px;
+        margin: auto;
+        background-color: aliceblue;
+        border: 1px solid black;
+    }
+    .rowcontainer-howitworks {
+        width: 90%;
+        height: auto;
+        margin: auto;
+        margin-top: 4%;
+        /* background-color: green; */
+        border: 1px solid black;
+    }
+    .rowcontainer-howitworks h4 {
+        border: 1px solid black;
+        font-size: 28px;
+        font-family: Poppins;
+        font-weight: 700;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        margin-top: 1%;
+
+    }
+    .grid>div {
+        border: 1px solid black;
+        height: 190px;
+    }
+    .grid>div>div {
+        border: 1px solid black;
+        background-color: rgb(247,247,247);
+        box-sizing: border-box;
+        border:  10px solid rgb(235, 235, 235);
+        height: 71%;
+        width: 49%;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+    }
+    .grid img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+    }
+    .grid>div>div:hover {
+        width: 59%;
+        border:  10px solid rgb(28,171,162);
+        height: auto;
+        border-radius: 50%;
+    }
+
+
+
+
+
