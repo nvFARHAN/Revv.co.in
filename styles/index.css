@@ -1,0 +1,86 @@
+body {
+  background-color: #f1f4f8;
+}
+#jumbotron {
+  height: 580px;
+  background-image: url("https://www.revv.co.in/assets/RentalImages/HomeScreen/heroCarousel/ST_BG_1.png");
+}
+#carousel1,
+#carousel2,
+#carousel3 {
+  height: 580px;
+  width: 100%;
+  text-align: center;
+}
+#carousel1 {
+  background-image: url("https://www.revv.co.in/assets/RentalImages/HomeScreen/heroCarousel/ST_BG_1.png");
+}
+#carousel2 {
+  background-image: url("https://www.revv.co.in/assets/RentalImages/HomeScreen/heroCarousel/ST_LT_BG_2.png");
+}
+#carousel3 {
+  background-image: url("https://www.revv.co.in/assets/RentalImages/HomeScreen/heroCarousel/ST_LT_BG_3.png");
+}
+.carousel-item img {
+  width: 30%;
+  /* height: 50%; */
+}
+#carousel1 img,
+#carousel2 img,
+#carousel3 img {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+}
+#form {
+  /* width: 50%; */
+  border: 1px solid black;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  z-index: 10;
+  background-color: white;
+  border-radius: 20px;
+}
+#featured,
+#sanitized {
+  display: flex;
+  overflow: hidden;
+}
+#featured > div,
+#sanitized > div {
+  padding: 5px 0;
+  text-align: center;
+}
+#featured img,
+#sanitized img {
+  width: 95%;
+  box-shadow: 0 0 2px 0 rgb(0 0 0 / 5%);
+  border-radius: 12px;
+}
+/* .angle {
+  float: right;
+  height: 39px;
+  display: flex;
+  align-items: center;
+} */
+.angle img {
+  width: 24px;
+  height: 24px;
+}
+#faqs,
+#app {
+  padding: 5px 0;
+  box-shadow: 0 0 2px 0 rgb(0 0 0 / 5%);
+  border-radius: 12px;
+  /* width: 95%; */
+  background-color: white;
+  padding: 20px 0;
+}
+#faqs > h4,
+#faqs > p {
+  padding: 0 20px;
+}
+#mob-img {
+  background-image: url("http://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/downloadApp/xapp_preview_desk.png.pagespeed.ic.SlqPBPQ6An.png");
+}
