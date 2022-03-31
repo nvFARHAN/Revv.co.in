@@ -29,19 +29,24 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#"
+        <a class="navbar-brand" href="index.html"
           ><img
             src="https://www.revv.co.in/grapheneImages/newopen/logo.svg"
             alt="logo"
         /></a>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav d-flex flex-row ms-auto">
-            <button class="btn btn-outline-success me-2" type="button">
-              Hyundai Subscription
-            </button>
-            <button class="btn btn-outline-success me-2" type="button">
-              Mahindra Subscription
-            </button>
+            <a href="#"
+              ><button class="btn btn-outline-success me-2" type="button">
+                <b>Hyundai</b> Subscription
+              </button></a
+            >
+            <a href=""
+              ><button class="btn btn-outline-success me-2" type="button">
+                <b>Mahindra</b> Subscription
+              </button></a
+            >
+
             <a class="nav-link" href="#">FAQs</a>
             <a class="nav-link" href="#"
               ><img
@@ -55,11 +60,39 @@
       </div>
     </nav>
 
+    <!-- form -->
+    <div id="form" class="d-none d-md-block col-md-4">
+      <div class="row d-flex">
+        <div class="col-6">
+          <div>
+            <h2>Rentals</h2>
+            <p>For hours & days</p>
+          </div>
+        </div>
+        <div class="col-6">
+          <div>
+            <h2>Subscriptions</h2>
+            <p>For months & years</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img src="https://www.revv.co.in/imgs/logo-rentals.svg" alt="" />
+        <p>Self drive car rentals in India</p>
+      </div>
+      <div class="row">
+        <div class="col-md-12">Select city</div>
+        <div class="col-6">Start time</div>
+        <div class="col-6">End time</div>
+      </div>
+      <button>Search</button>
+    </div>
+
     <!-- Jumbotron -->
     <!-- <div id="jumbotron"></div> -->
     <div
       id="carouselExampleIndicators"
-      class="carousel carousel-dark slide"
+      class="carousel carousel-dark slide d-none d-md-block"
       data-bs-ride="carousel"
     >
       <div class="carousel-indicators">
@@ -85,28 +118,6 @@
         ></button>
       </div>
       <div class="carousel-inner">
-        <div id="form" class="col-md-4 p-5">
-          <div class="d-flex">
-            <div>
-              <h2>Rentals</h2>
-              <p>For hours & days</p>
-            </div>
-            <div>
-              <h2>Subscriptions</h2>
-              <p>For months and years</p>
-            </div>
-          </div>
-          <div>
-            <img src="https://www.revv.co.in/imgs/logo-rentals.svg" alt="" />
-            <p>Self drive car rentals in India</p>
-          </div>
-          <div>
-            <div>Select city</div>
-            <div class="d-inline">Start time</div>
-            <div class="d-inline">End time</div>
-          </div>
-          <button>Search</button>
-        </div>
         <div class="carousel-item active" class="w-100">
           <div id="carousel1">
             <img
@@ -152,28 +163,32 @@
       </button>
     </div>
 
+    <!-- test -->
+
     <!-- featured -->
-    <div class="container mb-3">
-      <div class="d-flex justify-content-between">
-        <h2 class="d-inline">Featured</h2>
+    <div class="container my-5">
+      <div class="d-flex justify-content-between align-items-center">
+        <h2 class="d-inline heading">Featured</h2>
         <div class="angle">
           <img
+            id="left"
             src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/icons/angleLeft.png"
             alt=""
           />
           <img
+            id="right"
             src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/icons/angleRight.png"
             alt=""
           />
         </div>
       </div>
 
-      <div id="featured" class=""></div>
+      <div id="featured" class="row g-3"></div>
     </div>
     <!-- sanitized -->
-    <div class="container mb-3">
+    <div class="container my-5">
       <div class="d-flex justify-content-between">
-        <h2 class="d-inline">Sanitized & safe cars</h2>
+        <h2 class="d-inline heading">Sanitized & safe cars</h2>
         <div class="angle">
           <img
             src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/icons/angleLeft.png"
@@ -186,41 +201,41 @@
         </div>
       </div>
 
-      <div id="sanitized" class=""></div>
+      <div id="sanitized" class="row g-3"></div>
     </div>
     <!-- faqs -->
-    <div class="container mb-3">
+    <div class="container my-5">
       <div class="d-flex justify-content-between">
-        <h2 class="d-inline">FAQs</h2>
+        <h2 class="d-inline heading">FAQs</h2>
         <div class="angle">
           <a href="">View all</a>
         </div>
       </div>
-      <div id="faqs" class="mx-auto">
-        <h4>Is there a speed limit?</h4>
-        <p>
+      <div id="faqs" class="py-3">
+        <h4 class="sub-heading mx-4">Is there a speed limit?</h4>
+        <p class="para mb-3 mx-4">
           Revv allows up to 125 km/hr. However it is 80 km/hr in a few cities
           where some cars might be equipped with speed governors as per
           government directives. Revv strictly advises to follow local speed
           limits.
         </p>
         <hr />
-        <h4>Can I extend/ cancel/ modify?</h4>
-        <p>
+        <h4 class="sub-heading mx-4">Can I extend/ cancel/ modify?</h4>
+        <p class="para mb-3 mx-4">
           Yes, extensions are possible subject to availability & charges.
           Cancellations & modifications will attract nominal charges as per our
           policy.
         </p>
         <hr />
-        <h4>Booking criteria & documents?</h4>
-        <p>
+        <h4 class="sub-heading mx-4">Booking criteria & documents?</h4>
+        <p class="para mb-3 mx-4">
           Min. 21 years old, have valid original government ID (Aadhar,
           Passport, or PAN only) and a valid driving licence for “Light Motor
           Vehicles”, which is min. 1 year old at the time of starting the trip.
         </p>
         <hr />
-        <h4>Are there any restricted areas?</h4>
-        <p>
+        <h4 class="sub-heading mx-4">Are there any restricted areas?</h4>
+        <p class="para mb-3 mx-4">
           Leh/Ladhakh, Spiti Valley & Kaza/Nako regions are not permitted to
           take Revv cars. Customer will be fully liable for any damages incurred
           to the car in that region.
@@ -228,28 +243,367 @@
       </div>
     </div>
 
-    <!-- playstore -->
-    <div class="container">
-      <div id="app" class="row">
-        <div class="col-md-6">
-          <h1>Download the Revv app</h1>
+    <!-- happy customers -->
+    <div class="container my-5">
+      <div class="d-flex justify-content-between">
+        <h2 class="d-inline heading">Happy customers</h2>
+        <div class="angle">
           <img
-            src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/downloadApp/app_store.webp"
+            src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/icons/angleLeft.png"
             alt=""
           />
           <img
-            src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/downloadApp/google_play.webp"
+            src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/icons/angleRight.png"
             alt=""
           />
         </div>
-        <div id="mob-img" class="col-md-6"></div>
+      </div>
+
+      <div id="happyCustomers" class="row g-3"></div>
+    </div>
+
+    <!-- playstore -->
+    <div class="container">
+      <div id="app" class="row">
+        <div class="col-12 col-md-6">
+          <h2 class="heading">Download the Revv app</h2>
+          <div>
+            <a
+              href="https://apps.apple.com/in/app/revv-self-drive-cars-delivered/id1021594400"
+            >
+              <img
+                src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/downloadApp/app_store.webp"
+                alt=""
+              />
+            </a>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.selfdrive&hl=en"
+            >
+              <img
+                src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/downloadApp/google_play.webp"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+        <div id="mob-img" class="col-12 col-md-6"></div>
       </div>
     </div>
+
+    <!-- journey -->
+    <div class="container my-5">
+      <div>
+        <h2 class="heading">Our journey so far</h2>
+      </div>
+      <div id="journey" class="row">
+        <div class="col-6 col-md-3">
+          <img
+            src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/ourJourney/revvers.png"
+            alt=""
+          />
+          <h2>1 Mn +</h2>
+          <p>Happy Revvers</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <img
+            src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/ourJourney/cities.png"
+            alt=""
+          />
+          <h2>22+ cities</h2>
+          <p>Across India</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <img
+            src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/ourJourney/travel.png"
+            alt=""
+          />
+          <h2>50 Mn +</h2>
+          <p>Kms travelled</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <img
+            src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/ourJourney/review.png"
+            alt=""
+          />
+          <h2>4.8/5</h2>
+          <p>20K+ reviewers</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- investors -->
+    <div class="container">
+      <h2 class="heading">Our investors</h2>
+      <div id="investors" class="row">
+        <div class="col-6 col-md-3">
+          <img
+            src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/investors/hyundai.webp"
+            alt=""
+          />
+          <p>Hyundai Motor Company</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <img
+            src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/investors/edelweissFinancialServices.webp"
+            alt=""
+          />
+          <p>Edelweiss Financial Services</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <img
+            src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/investors/dreamIncubator.webp"
+            alt=""
+          />
+          <p>Dream Incubator</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <img
+            src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/investors/beenext.webp"
+            alt=""
+          />
+          <p>Beenext</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- cities -->
+    <div id="cities" class="container bg-dark">
+      <div>
+        <h2 class="heading text-light">Serviceable cities</h2>
+      </div>
+      <div class="row text-light opacity-50">
+        <div class="col-md-4">
+          <p>Car Rental in Bangalore</p>
+          <p>Car Rental in Hyderabad</p>
+          <p>Car Rental in Mumbai</p>
+          <p>Car Rental in Delhi-NCR</p>
+          <p>Car Rental in Chennai</p>
+          <p>Car Rental in Pune</p>
+          <p>Car Rental in Kolkata</p>
+          <p>Car Rental in Ahmedabad</p>
+        </div>
+        <div class="d-none d-md-block col-md-4">
+          <p>Car Rental in Bhubaneswar</p>
+          <p>Car Rental in Chandigarh</p>
+          <p>Car Rental in Coimbatore</p>
+          <p>Car Rental in Jaipur</p>
+          <p>Car Rental in Kochi</p>
+          <p>Car Rental in Mangalore</p>
+          <p>Car Rental in Mysore</p>
+          <p>Car Rental in Nagpur</p>
+        </div>
+        <div class="d-none d-md-block col-md-4">
+          <p>Car Rental in Surat</p>
+          <p>Car Rental in Tirupati</p>
+          <p>Car Rental in Trivandrum</p>
+          <p>Car Rental in Vadodara</p>
+          <p>Car Rental in Vijayawada</p>
+          <p>Car Rental in Vizag</p>
+        </div>
+        <a class="d-block d-md-none" href="#">View all</a>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer id="footer" class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img
+            src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/logo/revv-logo.png"
+            alt=""
+          />
+          <p class="mt-3">
+            © 2022 Primemover Mobility Technologies Pvt Ltd. All rights reserved
+          </p>
+        </div>
+        <hr class="d-block d-md-none" />
+        <div class="col-md-4">
+          <p>Home</p>
+          <p>FAQs</p>
+          <p>Policy</p>
+          <p>Blogs</p>
+        </div>
+        <hr class="d-block d-md-none" />
+        <div class="col-md-4">
+          <p class="my-0">Social</p>
+          <div class="icons">
+            <a href="https://www.facebook.com/revvindia/"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="https://twitter.com/revv_india"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="https://www.instagram.com/revv_india"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://www.youtube.com/channel/UCdASUGQcRPefuQYO6rT331Q"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a href="https://www.linkedin.com/company/revv-self-drive-car"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+          <p>Download the Revv App!</p>
+          <div class="download link">
+            <a
+              href="https://apps.apple.com/in/app/revv-self-drive-cars-delivered/id1021594400"
+              ><img
+                src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/logo/appstore_apple.webp"
+                alt=""
+              />
+              <p class="d-inline">Download <b>App Store</b></p>
+            </a>
+          </div>
+          <div class="download link">
+            <a
+              href="https://play.google.com/store/apps/details?id=com.selfdrive&hl=en"
+              ><img
+                src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/logo/playstore_google.webp"
+                alt=""
+              />
+              <p class="d-inline">Download <b>Google Play</b></p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- paragraph -->
+    <section class="container">
+      <h2 class="heading">Safe, Sanitized Car Subscription You Can Count On</h2>
+      <p class="para">
+        Car subscription from Revv provides the flexibility of having a car
+        anytime you want, as well as the assurance of a sanitized and virus free
+        vehicle for your own self drive. The car sanitization process
+        encompasses all the preventive hygiene best practices directed by the
+        World Health Organization (WHO) and is diligently conducted for each
+        vehicle delivered to the car subscribers. The safety measures that are
+        implemented consist of:
+      </p>
+      <ul>
+        <li>
+          Industrial standards sanitization and disinfection before delivery for
+          all surfaces of the vehicle
+        </li>
+        <li>
+          Drivers wear Personal Protective Equipment (PPE) including masks and
+          gloves while delivering the cars
+        </li>
+        <li>Paperless agreements for minimum contact</li>
+        <li>Upon return, digital receipt sent to the customer’s e-mail.</li>
+      </ul>
+      <h2 class="heading">Self-Drive Car Rentals</h2>
+      <p class="para">
+        Whether you’re planning a road trip outside the city or looking for a
+        convenient way to cruise around when you’re out of town, Revv is here to
+        ease your travel woes. You can pick one of Revv’s convenient car rental
+        options to drive down to the nearby beach or to manoeuvre through
+        traffic as you head from one important business meeting to the next.
+        With a self-drive car rental from Revv, you have the freedom to move
+        around and explore places at your own pace.
+      </p>
+      <h2 class="heading">Affordable, Convenient & Safe</h2>
+      <p class="para">
+        With Revv, you can rent a car at a time that is convenient to you and
+        get it delivered right to your doorstep. Apart from an hourly rate
+        starting at just Rs. 33/hour, Revv also offers flexible car rental
+        services. You can choose monthly car rental packages, unlimited
+        kilometre packages, or even get a brand new car from Revv by simply
+        paying the first year’s insurance. Additionally, all cars in our fleet
+        have insurance, so you’ll be safe and secure while cruising down open
+        roads.
+      </p>
+      <h2 class="heading">Why Rev</h2>
+      <p class="para">
+        When you choose a car <b>subscription</b> with Revv, you can enjoy:
+      </p>
+      <ul>
+        <li>
+          Flexible Rentals – You decide whether you’d like to rent a car for an
+          hour, a week, a month, or on a daily basis.
+        </li>
+        <li>
+          Several Options – Pick from our wide range of classy hatchbacks,
+          comfortable sedans and spacious SUVs.
+        </li>
+        <li>
+          All-India Permits – Revv cars come with an All India Tourist Permit,
+          so you can drive from Kashmir to Kanyakumari without any worries.
+        </li>
+        <li>
+          Unending Opportunities – The cars you rent from Revv can be used for
+          trips out of the city or for daily travels through town. Revv also
+          provides cars for pick up and drop off services at airports and bus
+          and train stations.
+        </li>
+      </ul>
+      <h2 class="heading">Pick Your Favourite Car</h2>
+      <p class="para">
+        Revv has an amazing fleet of rental cars ranging from compact hatchbacks
+        to roomy sedans and powerful SUVs. You can choose to hire a Hyundai
+        Grand i10, Hyundai Creta, Honda City, Maruti Suzuki Brezza, Ford
+        EcoSport, Mahindra Scorpio, Toyota Innova Crysta, Mahindra XUV and many
+        other car models that suit your requirement.
+      </p>
+      <h2 class="heading">Extensive Network</h2>
+      <p class="para">
+        Currently, you can rent a self-driving car from Revv in Ahmedabad,
+        Bengaluru, Chandigarh, Chennai, Coimbatore, Delhi NCR, Hyderabad,
+        Jaipur, Kochi, Kolkata, Mangalore, Mumbai, Mysuru, Pune, Surat,
+        Trivandrum, Tirupati, Vijayawada, Vizag, Bhubaneswar, Nagpur & Vadodara.
+      </p>
+      <h2 class="heading">Rent a Car</h2>
+      <p class="para">
+        To rent one of our <b>sanitized cars</b>, you can follow these simple
+        steps:
+      </p>
+      <ul>
+        <li>
+          Download the Revv app from the
+          <a
+            href="https://apps.apple.com/in/app/revv-self-drive-cars-delivered/id1021594400"
+            >Apple App Store</a
+          >
+          or
+          <a
+            href="https://play.google.com/store/apps/details?id=com.selfdrive&hl=en"
+            >Google Play Store</a
+          >
+        </li>
+        <li>
+          Pick your favourite car and let us know when and where you need it.
+        </li>
+        <li>
+          The car will be delivered to your doorstep at the date and time
+          promised.
+        </li>
+        <li>
+          Start the engine and enjoy your road trip without worrying about the
+          kilometres.
+        </li>
+        <li>
+          Let us know where we need to pick up the car from once you’re done.
+        </li>
+        <li>
+          You’ll receive an invoice in your email 48 hours after your trip is
+          completed.
+        </li>
+        <li>Use the app to reschedule or cancel bookings as required.</li>
+      </ul>
+      <p class="para">
+        With Revv, exploring and travelling has become easy, convenient and
+        completely hassle-free unlike in cabs & taxis!
+      </p>
+    </section>
   </body>
   <!-- JavaScript Bundle with Popper -->
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://kit.fontawesome.com/739c19ad40.js"
     crossorigin="anonymous"
   ></script>
   <script src="./scripts/index.js"></script>
