@@ -1,0 +1,185 @@
+h1{
+    text-align: center;
+}
+.box1{
+    width: max-content;
+    height: 80px;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 10px;
+}
+#email{
+    width: 320px;
+    height: 50px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+#password{
+    width: 320px;
+    height: 50px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+#button{
+width: 120px;
+height: 35px;
+color: #fff;
+background-color: #0ebaba;
+font-size: 16px;
+margin-top: 20px;
+line-height: 30px;
+margin-left: 120px;
+border: none;
+border-radius: 5px;
+display: inline-block;
+transition: all 0.6s ease 0s;
+}
+h1{
+   color: #8e8e8e;
+   font-size: 20px;
+}
+#p{
+    color: #0ebaba;
+    margin-left: 30px;
+    margin-top: -10px;
+}
+.button{
+    width: max-content;
+    color: #0ebaba;
+    background-color: white;
+    border: none;
+    margin-top: -18px;
+    margin-left: 5px;
+}
+.button:hover{
+    background-color: white;
+    color: #0ebaba;
+}
+.signup{
+    display: flex;
+}
+#b{
+    margin-left: 80px;
+}
+.image{
+   width: 50%;
+margin-left: 100px;
+ cursor: pointer;
+ margin-top: 5px;
+
+}
+.btn-close{
+    margin-left: 360px;
+    margin-top: 10px;
+}
+.modal-content{
+    width: 400px;
+}
+#N{
+  color: red;
+  font-size: 12px;
+}
+#M{
+  color: red;
+  font-size: 12px;
+}
+#button:hover{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+.box2{
+    width: max-content;
+    height: 80px;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 10px;
+}
+#button1{
+width: 120px;
+height: 35px;
+color: #fff;
+background-color: #0ebaba;
+font-size: 16px;
+margin-top: 20px;
+line-height: 30px;
+margin-left: 120px;
+border: none;
+border-radius: 5px;
+display: inline-block;
+transition: all 0.6s ease 0s;
+}
+#button1:hover{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+#h5{
+  text-align: center;
+}
+#email1{
+    width: 320px;
+    height: 50px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+#password1{
+    width: 320px;
+    height: 50px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+#repassword{
+    width: 320px;
+    height: 50px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+#image{
+  width: 50%;
+  margin-left: 90px;
+  margin-top: 8px;
+}
+#q{
+  color: red;
+  font-size: 12px;  
+}
+#k{
+  color: red;
+  font-size: 12px;  
+}
+#button3{
+width: 120px;
+height: 35px;
+color: #fff;
+background-color: #0ebaba;
+font-size: 16px;
+margin-top: 20px;
+line-height: 30px;
+margin-left: 120px;
+border: none;
+border-radius: 5px;
+display: inline-block;
+transition: all 0.6s ease 0s;
+}
+#button4{
+width: 120px;
+height: 35px;
+color: #fff;
+background-color: #0ebaba;
+font-size: 16px;
+margin-top: -5px;
+line-height: 30px;
+margin-left: 135px;
+border: none;
+border-radius: 5px;
+display: inline-block;
+transition: all 0.6s ease 0s;
+}
+#button4:hover{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}

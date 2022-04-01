@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+   
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <!-- <div class="modal-header"> -->
+              <!-- <h5 class="modal-title" id="exampleModalToggleLabel">Modal 1</h5> -->
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <!-- </div> -->
+            <div class="modal-body">
+              <!-- Show a second modal and hide this one with the button below. -->
+              <form id="form1" action="">
+                  <h1>LOGIN</h1>
+                  <div class="box1">
+                    <input id="email" type="email" placeholder="Enter Email">
+                    <p id="N"></p>
+                 </div>
+                 <div class="box1">
+                    <input id="password" type="password" placeholder="Enter Password">
+                    <p id="M"></p>
+                 </div>
+                 <p id="p">Send a new password to my email ID</p>
+                  <input id="button" type="submit" value="Login">
+              </form>
+            </div>
+            <div class="signup">
+                <p id="b">Don't have a account yet?</p>
+              <button class="button btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">SignUp</button>
+            </div>
+            <hr>
+            <div >
+                <a href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?redirect_uri=storagerelay%3A%2F%2Fhttps%2Fwww.revv.co.in%3Fid%3Dauth511857&response_type=permission%20id_token&scope=email%20profile%20openid&openid.realm&include_granted_scopes=true&client_id=179663074908-qjbll6547bit8bpghq1aio472t7b7ufk.apps.googleusercontent.com&ss_domain=https%3A%2F%2Fwww.revv.co.in&fetch_basic_profile=true&gsiwebsdk=2&flowName=GeneralOAuthFlow">
+                    <img class="image" src="https://www.revv.co.in/imgs/google-login.png" alt="">
+                </a>
+                <a href="https://www.facebook.com/v2.1/dialog/oauth?app_id=844747322290622&cbt=1648645564522&channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df119f8dbd095734%26domain%3Dwww.revv.co.in%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.revv.co.in%252Ff1655c63b03b8f8%26relation%3Dopener&client_id=844747322290622&display=popup&domain=www.revv.co.in&e2e=%7B%7D&fallback_redirect_uri=https%3A%2F%2Fwww.revv.co.in%2F&locale=en_US&logger_id=f11a736343e40d&origin=1&redirect_uri=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df55721146b9fd8%26domain%3Dwww.revv.co.in%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.revv.co.in%252Ff1655c63b03b8f8%26relation%3Dopener%26frame%3Df157dccff9a7708&response_type=token%2Csigned_request%2Cgraph_domain&scope=email&sdk=joey&version=v2.1">
+                <img class="image" src="https://www.revv.co.in/imgs/facebook-icon.png" alt="">
+                      
+                </a>
+            </div>
+            <br>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <!-- <div class="modal-header"> -->
+              
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <!-- </div> -->
+            <div class="modal-body">
+              <h5 id="h5">SIGNUP</h5>
+              <div >
+                <a href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?redirect_uri=storagerelay%3A%2F%2Fhttps%2Fwww.revv.co.in%3Fid%3Dauth511857&response_type=permission%20id_token&scope=email%20profile%20openid&openid.realm&include_granted_scopes=true&client_id=179663074908-qjbll6547bit8bpghq1aio472t7b7ufk.apps.googleusercontent.com&ss_domain=https%3A%2F%2Fwww.revv.co.in&fetch_basic_profile=true&gsiwebsdk=2&flowName=GeneralOAuthFlow">
+                    <img id="image"  src="https://www.revv.co.in/imgs/google-login.png" alt="">
+                </a>
+                <a href="https://www.facebook.com/v2.1/dialog/oauth?app_id=844747322290622&cbt=1648645564522&channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df119f8dbd095734%26domain%3Dwww.revv.co.in%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.revv.co.in%252Ff1655c63b03b8f8%26relation%3Dopener&client_id=844747322290622&display=popup&domain=www.revv.co.in&e2e=%7B%7D&fallback_redirect_uri=https%3A%2F%2Fwww.revv.co.in%2F&locale=en_US&logger_id=f11a736343e40d&origin=1&redirect_uri=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df55721146b9fd8%26domain%3Dwww.revv.co.in%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.revv.co.in%252Ff1655c63b03b8f8%26relation%3Dopener%26frame%3Df157dccff9a7708&response_type=token%2Csigned_request%2Cgraph_domain&scope=email&sdk=joey&version=v2.1">
+                <img id="image" src="https://www.revv.co.in/imgs/facebook-icon.png" alt="">
+                 </a>
+            </div>
+            <form id="form2" action="">
+              <div class="box2">
+                <input id="email1" type="email" placeholder="Enter Email">
+                <p id="k"></p>
+             </div>
+             <div class="box2">
+                <input id="password1" type="password" placeholder="Enter Password">
+             </div>
+             <div class="box2">
+              <input id="repassword" type="password" placeholder="Confirm Password">
+              <p id="q"></p>
+           </div>
+              <input id="button1" type="submit" value="Proceed">
+          </form>
+               
+            </div>
+            
+              <button id="button4" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to Login</button>
+           <br>
+          </div>
+        </div>
+      </div>
+      <a id="button3" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Login</a>
+</body>
+</html>
+<script src="login.js"></script>
