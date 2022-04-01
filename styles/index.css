@@ -3,6 +3,24 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #f1f4f8;
 }
+
+#logo-txt {
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  left: 25px;
+  bottom: -18px;
+}
+.offcanvas-header {
+  margin-bottom: 0px;
+  padding: 22px 26px;
+  height: 125px;
+  background-image: linear-gradient(
+    to left,
+    rgb(28, 171, 162),
+    rgb(28, 127, 171)
+  );
+}
 #jumbotron {
   height: 580px;
   background-image: url("https://www.revv.co.in/assets/RentalImages/HomeScreen/heroCarousel/ST_BG_1.png");
@@ -32,7 +50,7 @@ body {
 #carousel3 img {
   position: absolute;
   top: 20%;
-  left: 50%;
+  left: 60%;
 }
 #featured,
 #sanitized,
@@ -103,12 +121,12 @@ body {
   margin-bottom: 40px;
   opacity: 0.75;
 }
-ul {
+section ul {
   padding: 0;
   margin: 20px 0;
   list-style: none;
 }
-li {
+section li {
   position: relative;
   color: #5d5e6f;
   padding-left: 16px;
@@ -116,7 +134,7 @@ li {
   font-size: 12px;
   line-height: 1.5;
 }
-li::before {
+section li::before {
   content: "";
   position: absolute;
   top: 6px;
@@ -131,11 +149,10 @@ li::before {
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-  /* width: 530px;
-  height: 500px; */
+  width: 500px;
   box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
   position: absolute;
-  top: 15%;
+  top: 11%;
   left: 10%;
   z-index: 10;
   background-color: white;
@@ -147,7 +164,7 @@ li::before {
   border-radius: 18px;
   border: 4px solid #49a6ba;
   background-color: #49a6ba;
-  height: 87px;
+  /* height: 87px; */
 }
 #form > button {
   background-image: linear-gradient(
@@ -174,14 +191,14 @@ li::before {
   cursor: pointer;
 }
 #form > div > div > div > h2 {
-  font-size: 20px;
-  font-weight: 700;
+  /* font-size: 20px; */
+  /* font-weight: 700; */
   text-align: center;
   line-height: 1.4;
 }
 #form > div > div > div > p {
-  font-size: 14px;
-  font-weight: 400;
+  /* font-size: 14px; */
+  /* font-weight: 400; */
   line-height: 1;
   text-align: center;
   margin: 0;
@@ -205,6 +222,13 @@ li::before {
   height: 28px;
 }
 
+.cb {
+  box-shadow: 0 0 2px 0 rgb(0 0 0 / 5%);
+  border-radius: 12px;
+  background-color: white;
+  height: 150px;
+  padding: 2em 1em;
+}
 #app {
   height: 350px;
   margin: 30px 0px;
@@ -276,6 +300,7 @@ li::before {
   padding-left: 5rem;
   padding-right: 5rem;
 } */
+
 .icons {
   display: flex;
   justify-content: space-between;
@@ -333,8 +358,13 @@ li::before {
   color: #0dbaba;
   background-color: #cbe3e8;
 }
+#demos {
+  margin-top: 50px;
+}
+.owl-nav {
+}
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .heading {
     font-size: 16px;
   }
@@ -360,5 +390,14 @@ li::before {
     background-size: contain;
     background-position: center;
     align-self: flex-end;
+  }
+  #form {
+    position: relative;
+    z-index: 0;
+    width: 95%;
+    /* width: auto; */
+    left: -6px;
+    padding: 1em;
+    margin: 1em;
   }
 }

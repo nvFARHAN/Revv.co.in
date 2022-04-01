@@ -12,86 +12,298 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" type="text/css" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/login.css" />
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="./styles/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./styles/owl.theme.default.min.css" />
+    <!-- javascript -->
+    <script src="./scripts/jquery.min.js"></script>
+    <script src="./scripts/owl.carousel.js"></script>
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
       <div class="container">
         <button
           class="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="index.html"
+        <a class="navbar-brand position-relative me-5" href="index.html"
           ><img
             src="https://www.revv.co.in/grapheneImages/newopen/logo.svg"
             alt="logo"
-        /></a>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav d-flex flex-row ms-auto">
-            <a href="#"
-              ><button class="btn btn-outline-success me-2" type="button">
-                <b>Hyundai</b> Subscription
-              </button></a
-            >
-            <a href=""
-              ><button class="btn btn-outline-success me-2" type="button">
-                <b>Mahindra</b> Subscription
-              </button></a
-            >
-
-            <a class="nav-link" href="#">FAQs</a>
-            <a class="nav-link" href="#"
-              ><img
-                src="https://www.revv.co.in/grapheneImages/newopen/ic-web-profile-login.svg"
-                alt="loginLogo"
-              />
-              Login or Signup</a
-            >
+          />
+          <p id="logo-txt">Sanitized. Safe</p>
+        </a>
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <div class="offcanvas-title" id="offcanvasNavbarLabel">
+              <div class="d-flex">
+                <div>
+                  <!-- <img
+                    src="https://www.revv.co.in/grapheneImages/newopen/logo.svg"
+                    style="height: 36px"
+                  /> -->
+                </div>
+                <span class="text-light display-2">Revv</span>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="btn-close text-reset ms-0"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item d-none d-lg-block">
+                <a href=""
+                  ><button class="btn btn-outline-success me-2" type="button">
+                    <b>Mahindra</b> Subscription
+                  </button></a
+                >
+              </li>
+              <li class="nav-item d-none d-lg-block">
+                <a href="#"
+                  ><button class="btn btn-outline-success me-2" type="button">
+                    <b>Hyundai</b> Subscription
+                  </button></a
+                >
+              </li>
+              <li class="nav-item d-block d-lg-none">
+                <a class="nav-link" href="#"><b>Mahindra</b> Subscription</a>
+              </li>
+              <li class="nav-item d-block d-lg-none">
+                <a class="nav-link" href="#"><b>Hyundai</b> Subscription</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">FAQs</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="button3"
+                  data-bs-toggle="modal"
+                  href="#exampleModalToggle"
+                  ><img
+                    src="https://www.revv.co.in/grapheneImages/newopen/ic-web-profile-login.svg"
+                    alt="loginLogo"
+                  />
+                  Login or Signup</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </nav>
 
+    <!-- nav login modal -->
+    <div
+      class="modal fade"
+      id="exampleModalToggle"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <!-- <div class="modal-header"> -->
+          <!-- <h5 class="modal-title" id="exampleModalToggleLabel">Modal 1</h5> -->
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+          <!-- </div> -->
+          <div class="modal-body">
+            <!-- Show a second modal and hide this one with the button below. -->
+            <form id="form1" action="">
+              <h1>LOGIN</h1>
+              <div class="box1">
+                <input id="email" type="email" placeholder="Enter Email" />
+                <p id="N"></p>
+              </div>
+              <div class="box1">
+                <input
+                  id="password"
+                  type="password"
+                  placeholder="Enter Password"
+                />
+                <p id="M"></p>
+              </div>
+              <p id="p">Send a new password to my email ID</p>
+              <input id="button" type="submit" value="Login" />
+            </form>
+          </div>
+          <div class="signup">
+            <p id="b">Don't have a account yet?</p>
+            <button
+              class="button btn-primary"
+              data-bs-target="#exampleModalToggle2"
+              data-bs-toggle="modal"
+            >
+              SignUp
+            </button>
+          </div>
+          <hr />
+          <div>
+            <a
+              href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?redirect_uri=storagerelay%3A%2F%2Fhttps%2Fwww.revv.co.in%3Fid%3Dauth511857&response_type=permission%20id_token&scope=email%20profile%20openid&openid.realm&include_granted_scopes=true&client_id=179663074908-qjbll6547bit8bpghq1aio472t7b7ufk.apps.googleusercontent.com&ss_domain=https%3A%2F%2Fwww.revv.co.in&fetch_basic_profile=true&gsiwebsdk=2&flowName=GeneralOAuthFlow"
+            >
+              <img
+                class="image"
+                src="https://www.revv.co.in/imgs/google-login.png"
+                alt=""
+              />
+            </a>
+            <a
+              href="https://www.facebook.com/v2.1/dialog/oauth?app_id=844747322290622&cbt=1648645564522&channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df119f8dbd095734%26domain%3Dwww.revv.co.in%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.revv.co.in%252Ff1655c63b03b8f8%26relation%3Dopener&client_id=844747322290622&display=popup&domain=www.revv.co.in&e2e=%7B%7D&fallback_redirect_uri=https%3A%2F%2Fwww.revv.co.in%2F&locale=en_US&logger_id=f11a736343e40d&origin=1&redirect_uri=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df55721146b9fd8%26domain%3Dwww.revv.co.in%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.revv.co.in%252Ff1655c63b03b8f8%26relation%3Dopener%26frame%3Df157dccff9a7708&response_type=token%2Csigned_request%2Cgraph_domain&scope=email&sdk=joey&version=v2.1"
+            >
+              <img
+                class="image"
+                src="https://www.revv.co.in/imgs/facebook-icon.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <br />
+        </div>
+      </div>
+    </div>
+
+    <!-- nav signup modal -->
+    <div
+      class="modal fade"
+      id="exampleModalToggle2"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel2"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <!-- <div class="modal-header"> -->
+
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+          <!-- </div> -->
+          <div class="modal-body">
+            <h5 id="h5">SIGNUP</h5>
+            <div>
+              <a
+                href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?redirect_uri=storagerelay%3A%2F%2Fhttps%2Fwww.revv.co.in%3Fid%3Dauth511857&response_type=permission%20id_token&scope=email%20profile%20openid&openid.realm&include_granted_scopes=true&client_id=179663074908-qjbll6547bit8bpghq1aio472t7b7ufk.apps.googleusercontent.com&ss_domain=https%3A%2F%2Fwww.revv.co.in&fetch_basic_profile=true&gsiwebsdk=2&flowName=GeneralOAuthFlow"
+              >
+                <img
+                  id="image"
+                  src="https://www.revv.co.in/imgs/google-login.png"
+                  alt=""
+                />
+              </a>
+              <a
+                href="https://www.facebook.com/v2.1/dialog/oauth?app_id=844747322290622&cbt=1648645564522&channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df119f8dbd095734%26domain%3Dwww.revv.co.in%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.revv.co.in%252Ff1655c63b03b8f8%26relation%3Dopener&client_id=844747322290622&display=popup&domain=www.revv.co.in&e2e=%7B%7D&fallback_redirect_uri=https%3A%2F%2Fwww.revv.co.in%2F&locale=en_US&logger_id=f11a736343e40d&origin=1&redirect_uri=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df55721146b9fd8%26domain%3Dwww.revv.co.in%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.revv.co.in%252Ff1655c63b03b8f8%26relation%3Dopener%26frame%3Df157dccff9a7708&response_type=token%2Csigned_request%2Cgraph_domain&scope=email&sdk=joey&version=v2.1"
+              >
+                <img
+                  id="image"
+                  src="https://www.revv.co.in/imgs/facebook-icon.png"
+                  alt=""
+                />
+              </a>
+            </div>
+            <form id="form2" action="">
+              <div class="box2">
+                <input id="email1" type="email" placeholder="Enter Email" />
+                <p id="k"></p>
+              </div>
+              <div class="box2">
+                <input
+                  id="password1"
+                  type="password"
+                  placeholder="Enter Password"
+                />
+              </div>
+              <div class="box2">
+                <input
+                  id="repassword"
+                  type="password"
+                  placeholder="Confirm Password"
+                />
+                <p id="q"></p>
+              </div>
+              <input id="button1" type="submit" value="Proceed" />
+            </form>
+          </div>
+
+          <button
+            id="button4"
+            data-bs-target="#exampleModalToggle"
+            data-bs-toggle="modal"
+          >
+            Back to Login
+          </button>
+          <br />
+        </div>
+      </div>
+    </div>
+
     <!-- form -->
-    <div id="form" class="d-none d-md-block col-md-4">
-      <div class="row d-flex">
-        <div class="col-6">
-          <div>
-            <h2>Rentals</h2>
-            <p>For hours & days</p>
-          </div>
-        </div>
-        <div class="col-6">
-          <div>
-            <h2>Subscriptions</h2>
-            <p>For months & years</p>
-          </div>
-        </div>
-      </div>
-      <div>
-        <img src="https://www.revv.co.in/imgs/logo-rentals.svg" alt="" />
-        <p>Self drive car rentals in India</p>
-      </div>
+    <div class="container">
       <div class="row">
-        <div
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
-          class="col-md-12 fw-bold"
-          id="display"
-        >
-          Select city
+        <div id="form" class="col-12 col-lg-4">
+          <div class="row d-flex">
+            <div class="col-6">
+              <div>
+                <h2 class="sub-heading">Rentals</h2>
+                <p class="para">For hours & days</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div>
+                <h2 class="sub-heading">Subscriptions</h2>
+                <p class="para">For months & years</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img src="https://www.revv.co.in/imgs/logo-rentals.svg" alt="" />
+            <p>Self drive car rentals in India</p>
+          </div>
+          <div class="row">
+            <div
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              class="col-md-12 fw-bold"
+            >
+              <i class="fas fa-map-marker-alt"></i>
+              <b id="display">Select city</b>
+            </div>
+            <div class="col-12">
+              Start time
+              <input type="datetime-local" id="start-time" />
+            </div>
+            <div class="col-12">
+              End time
+              <input type="datetime-local" id="end-time" />
+            </div>
+          </div>
+          <button id="search">Search</button>
         </div>
-        <div class="col-6">Start time</div>
-        <div class="col-6">End time</div>
       </div>
-      <button>Search</button>
     </div>
 
     <!-- modal -->
@@ -147,7 +359,7 @@
     <!-- <div id="jumbotron"></div> -->
     <div
       id="carouselExampleIndicators"
-      class="carousel carousel-dark slide d-none d-md-block"
+      class="carousel carousel-dark slide d-none d-lg-block"
       data-bs-ride="carousel"
     >
       <div class="carousel-indicators">
@@ -218,30 +430,100 @@
       </button>
     </div>
 
-    <!-- test -->
-
-    <!-- featured -->
-    <div class="container my-5">
-      <div class="d-flex justify-content-between align-items-center">
-        <h2 class="d-inline heading">Featured</h2>
-        <div class="angle">
-          <img
-            id="left"
-            src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/icons/angleLeft.png"
-            alt=""
-          />
-          <img
-            id="right"
-            src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/icons/angleRight.png"
-            alt=""
-          />
+    <!-- Featured -->
+    <section id="demos" class="container">
+      <h2 class="d-inline heading">Featured</h2>
+      <div class="row mt-3">
+        <div class="large-12 columns">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <img
+                src="https://revvselfdrivecar.s3.us-west-2.amazonaws.com/5+days.png"
+                alt=""
+              />
+            </div>
+            <div class="item">
+              <img
+                src="https://revvselfdrivecar.s3.us-west-2.amazonaws.com/10+days.png"
+                alt=""
+              />
+            </div>
+            <div class="item">
+              <img
+                src="https://revvselfdrivecar.s3.us-west-2.amazonaws.com/15+days.png"
+                alt=""
+              />
+            </div>
+            <div class="item">
+              <img
+                src="https://revvselfdrivecar.s3-us-west-2.amazonaws.com/staging_images/subscriptions_banners_01-min.jpg"
+                alt=""
+              />
+            </div>
+            <div class="item">
+              <img
+                src="https://revvselfdrivecar.s3-us-west-2.amazonaws.com/staging_images/subscriptions_banners_02-min.jpg"
+                alt=""
+              />
+            </div>
+            <div class="item">
+              <img
+                src="https://revvselfdrivecar.s3-us-west-2.amazonaws.com/staging_images/subscriptions_banners_03-min.jpg"
+                alt=""
+              />
+            </div>
+            <div class="item">
+              <img
+                src="https://revvselfdrivecar.s3-us-west-2.amazonaws.com/staging_images/subscriptions_banners_04-min.jpg"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div id="featured" class="row g-3"></div>
-    </div>
     <!-- sanitized -->
-    <div class="container my-5">
+    <section class="container mt-5">
+      <h2 class="d-inline heading">Sanitized & safe cars</h2>
+      <div class="row mt-3">
+        <div class="large-12 columns">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <img
+                src="https://revvselfdrivecar.s3-us-west-2.amazonaws.com/thumbnails/Group+84.png"
+                alt=""
+              />
+            </div>
+            <div class="item">
+              <img
+                src="https://revvselfdrivecar.s3-us-west-2.amazonaws.com/staging_images/banner_sanitised_01-min.jpg"
+                alt=""
+              />
+            </div>
+            <div class="item">
+              <img
+                src="https://revvselfdrivecar.s3-us-west-2.amazonaws.com/staging_images/banner_sanitised_02-min.jpg"
+                alt=""
+              />
+            </div>
+            <div class="item">
+              <img
+                src="https://revvselfdrivecar.s3-us-west-2.amazonaws.com/staging_images/banner_sanitised_03-min.jpg"
+                alt=""
+              />
+            </div>
+            <div class="item">
+              <img
+                src="https://revvselfdrivecar.s3-us-west-2.amazonaws.com/staging_images/banner_sanitised_04-min.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <div class="container my-5">
       <div class="d-flex justify-content-between">
         <h2 class="d-inline heading">Sanitized & safe cars</h2>
         <div class="angle">
@@ -257,7 +539,96 @@
       </div>
 
       <div id="sanitized" class="row g-3"></div>
-    </div>
+    </div> -->
+
+    <!-- why revv -->
+    <section class="container mt-5">
+      <h2 class="d-inline heading">Why Revv</h2>
+      <div class="row mt-3">
+        <div class="large-12 columns">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <div class="d-flex cb">
+                <div
+                  class="pe-4 d-flex align-items-center justify-content-center"
+                >
+                  <img
+                    style="width: 50px; height: 50px"
+                    src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/whyRevv/price.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h4 class="sub-heading">Flexible pricing plans</h4>
+                  <p class="para mb-0">
+                    Choose 'unlimited kms' or 'with fuel' plans
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="d-flex cb">
+                <div
+                  class="pe-4 d-flex align-items-center justify-content-center"
+                >
+                  <img
+                    style="width: 50px; height: 50px"
+                    src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/whyRevv/home.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h4 class="sub-heading">Home delivery & return</h4>
+                  <p class="para mb-0">
+                    On-time doorstep service, at your preferred location and
+                    time
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="d-flex cb">
+                <div
+                  class="pe-4 d-flex align-items-center justify-content-center"
+                >
+                  <img
+                    style="width: 50px; height: 50px"
+                    src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/whyRevv/price.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h4 class="sub-heading">Flexible pricing plans</h4>
+                  <p class="para mb-0">
+                    Choose 'unlimited kms' or 'with fuel' plans
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="d-flex cb">
+                <div
+                  class="pe-4 d-flex align-items-center justify-content-center"
+                >
+                  <img
+                    style="width: 50px; height: 50px"
+                    src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/whyRevv/maintained.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h4 class="sub-heading">Well maintained cars</h4>
+                  <p class="para mb-0">
+                    Regular service & maintenance; Inspected before each trip
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- faqs -->
     <div class="container my-5">
       <div class="d-flex justify-content-between">
@@ -662,4 +1033,5 @@
     crossorigin="anonymous"
   ></script>
   <script src="./scripts/index.js"></script>
+  <script src="./scripts/login.js"></script>
 </html>
