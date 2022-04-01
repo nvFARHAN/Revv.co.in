@@ -93,6 +93,17 @@ customers.map((ele) => {
   document.querySelector("#happyCustomers").append(div);
 });
 
+var city = document.querySelectorAll(".city");
+for (var i = 0; i < city.length; i++) {
+  city[i].addEventListener("click", () => {
+    var display = document.querySelector("#display");
+    display.innerText = event.target.innerText;
+    event.target.innerText += "        ✔";
+    event.target.style.color = "#0dbaba";
+    event.target.style.backgroundColor = "#cbe3e8";
+  });
+}
+
 // var left = document.querySelector("#right");
 // left.addEventListener("click", () => {
 //   console.log("*");

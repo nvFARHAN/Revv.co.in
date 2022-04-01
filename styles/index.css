@@ -131,8 +131,8 @@ li::before {
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-  width: 530px;
-  height: 500px;
+  /* width: 530px;
+  height: 500px; */
   box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
   position: absolute;
   top: 15%;
@@ -316,6 +316,22 @@ li::before {
 .link a:hover {
   color: teal;
   cursor: pointer;
+}
+.modal1 {
+  border-radius: 12px;
+}
+.city {
+  font-size: 16px;
+  line-height: 1.15;
+  cursor: pointer;
+  color: #282b33;
+  margin: 0;
+  padding: 0.5em;
+  border-radius: 12px;
+}
+.city:hover {
+  color: #0dbaba;
+  background-color: #cbe3e8;
 }
 
 @media screen and (max-width: 767px) {
