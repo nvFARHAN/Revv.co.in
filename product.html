@@ -19,54 +19,105 @@
     <img id="gif" src="./styles/loader.gif" />
     <header>
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div class="container">
           <button
             class="navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand" href="#"
+          <a class="navbar-brand position-relative me-5" href="index.html"
             ><img
               src="https://www.revv.co.in/grapheneImages/newopen/logo.svg"
               alt="logo"
-          /></a>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav d-flex flex-row ms-auto">
-              <button class="btn btn-outline-success me-2" type="button">
-                Hyundai Subscription
-              </button>
-              <button class="btn btn-outline-success me-2" type="button">
-                Mahindra Subscription
-              </button>
-              <a class="nav-link" href="#">FAQs</a>
-              <a class="nav-link" href="#"
-                ><img
-                  src="https://www.revv.co.in/grapheneImages/newopen/ic-web-profile-login.svg"
-                  alt="loginLogo"
-                />
-                Login or Signup</a
-              >
+            />
+            <p id="logo-txt">Sanitized. Safe</p>
+          </a>
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <div class="offcanvas-title" id="offcanvasNavbarLabel">
+                <div class="d-flex">
+                  <div>
+                    <!-- <img
+                      src="https://www.revv.co.in/grapheneImages/newopen/logo.svg"
+                      style="height: 36px"
+                    /> -->
+                  </div>
+                  <span class="text-light display-2">Revv</span>
+                </div>
+              </div>
+              <button
+                type="button"
+                class="btn-close text-reset ms-0"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item d-none d-lg-block">
+                  <a href="mahindra.html"
+                    ><button class="btn btn-outline-success me-2" type="button">
+                      <b>Mahindra</b> Subscription
+                    </button></a
+                  >
+                </li>
+                <li class="nav-item d-none d-lg-block">
+                  <a href="hyundai.html"
+                    ><button class="btn btn-outline-success me-2" type="button">
+                      <b>Hyundai</b> Subscription
+                    </button></a
+                  >
+                </li>
+                <li class="nav-item d-block d-lg-none">
+                  <a class="nav-link" href="mahindra.html"
+                    ><b>Mahindra</b> Subscription</a
+                  >
+                </li>
+                <li class="nav-item d-block d-lg-none">
+                  <a class="nav-link" href="hyundai.html"
+                    ><b>Hyundai</b> Subscription</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="faq.html">FAQs</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="button3"
+                    data-bs-toggle="modal"
+                    href="#exampleModalToggle"
+                    ><img
+                      src="https://www.revv.co.in/grapheneImages/newopen/ic-web-profile-login.svg"
+                      alt="loginLogo"
+                    />
+                    Login or Signup</a
+                  >
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </nav>
-      <!-- add nav bar above this line -->
 
 
 
       <!-- modified bar start -->
       <div id="modified">
         
-          <input class="input1" type=""/>
-          <input />
-          <input/>
+          <input id="input1" type="text"/>
+          <input id="input2" type="datetime-local"/>
+          <input id="input3" type="datetime-local"/>
           <button> Modified search </button>
         </div>
       </div>
