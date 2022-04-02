@@ -1,12 +1,465 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Revv cars</title>
-</head>
-<body>
-    <h1>Product Page</h1>
-</body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <style> @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400&family=Roboto:wght@100&display=swap');</style>
+    <link rel="stylesheet" href="./styles/product.css" />
+    <script src="https://kit.fontawesome.com/c610c7a2ec.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <img id="gif" src="./styles/loader.gif" />
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#"
+            ><img
+              src="https://www.revv.co.in/grapheneImages/newopen/logo.svg"
+              alt="logo"
+          /></a>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav d-flex flex-row ms-auto">
+              <button class="btn btn-outline-success me-2" type="button">
+                Hyundai Subscription
+              </button>
+              <button class="btn btn-outline-success me-2" type="button">
+                Mahindra Subscription
+              </button>
+              <a class="nav-link" href="#">FAQs</a>
+              <a class="nav-link" href="#"
+                ><img
+                  src="https://www.revv.co.in/grapheneImages/newopen/ic-web-profile-login.svg"
+                  alt="loginLogo"
+                />
+                Login or Signup</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- add nav bar above this line -->
+
+
+
+      <!-- modified bar start -->
+      <div id="modified">
+        
+          <input class="input1" type=""/>
+          <input />
+          <input/>
+          <button> Modified search </button>
+        </div>
+      </div>
+      <div id="add">
+        <p>
+          Car Rental > Rent a Car > Car Rental in Bangalore > Cars for Rent in
+          Bangalore
+        </p>
+      </div>
+
+      <!-- modifiedbar end -->
+
+      
+      
+      
+      <!-- filter bar starts -->
+      <div id="secondnav">
+        <div id="sidetop">
+          <div class="fil">FILTERS</div>
+          <button class="res">RESET ALL</button>
+        </div>
+
+        <div id="cartop">
+          <div class="rent">
+            <h6>Car Rental in</h6>
+            <h5>Bangalore</h5>
+          </div>
+          <div id="price"><i class="fa-solid fa-toggle-off" id="toggle"></i> 
+            <p>price exclude fuel cost</p>
+             <img src="https://www.revv.co.in/grapheneImages/CarsAndPricing/info-icon.svg"/></div>
+          <div id="sort">
+            <p>sort by :</p>
+            <div>
+              <select
+                class="dropdown-menu1"
+                aria-labelledby="dropdownMenuButton1"
+                onchange="change()"
+              >
+                <option value="p">Popularity</option>
+                <option value="lth">
+                  <a class="dropdown-item" href="#">price: Low to High </a>
+                </option>
+                <option value="htl">
+                  <a class="dropdown-item" href="#">price: High to Low</a>
+                </option>
+                <option value="elth">
+                  <a class="dropdown-item" href="#"
+                    >Extra km Charges: Low to High</a
+                  >
+                </option>
+                <option value="ehtl">
+                  <a class="dropdown-item" href="#"
+                    >Extra km Charges: High to Low</a
+                  >
+                </option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- filterbar ends -->
+
+
+    <!-- main page data starts  -->
+
+    <main id="main">
+
+
+      <!-- sidebar - segemts/bands etc starts  -->
+
+
+      <div class="sidebar">
+        <div id="segment">
+          <div><h6>Segment</h6></div>
+          <input
+            type="checkbox"
+            value="Hatchback"
+            onclick="segement()"
+            class="id"
+          />
+          Hatchback
+          <br />
+          <input
+            type="checkbox"
+            onclick="sedansegement()"
+            class="sedan"
+            value="Sedan"
+          />
+          Sedan
+          <br />
+          <input
+            type="checkbox"
+            onclick="suvsegement()"
+            class="suv"
+            value="SUV"
+          />
+          SUV
+          <br />
+          <input
+            type="checkbox"
+            onclick="muvsegment()"
+            class="muv"
+            value="MUV"
+          />
+          MUV
+        </div>
+
+        <form id="brand">
+          <div><h5>Brand</h5></div>
+          <input
+            type="checkbox"
+            onclick="maruti()"
+            class="maruti"
+            value="Maruti"
+          />
+          Maruti
+
+          <div>
+            <input
+              type="checkbox"
+              onclick="hyundai()"
+              class="hyundai"
+              value="Hyundai"
+            />
+            Hyundai
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              onclick="mahindra()"
+              class="mahindra"
+              value="Mahindra"
+            />
+            Mahindra
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              onclick="honda()"
+              class="honda"
+              value="Honda"
+            />
+            Honda
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              onclick="toyta()"
+              class="toyta"
+              value="Toyota"
+            />
+            Toyta
+          </div>
+          <div>
+            <input type="checkbox" onclick="ford()" class="ford" value="Ford" />
+            Ford
+          </div>
+        </form>
+
+        <div id="fueltype">
+          <div><h5>Fuel type</h5></div>
+          <input
+            type="checkbox"
+            onclick="fueltypediesel()"
+            class="diesel"
+            value="Diesel"
+          />
+          Diesel
+          <br />
+          <div>
+            <input
+              type="checkbox"
+              onclick="fueltypepetrol()"
+              class="petrol"
+              value="Petrol"
+            />
+            Petrol
+          </div>
+        </div>
+
+        <div id="transmission">
+          <div><h5>Transmission type</h5></div>
+          <div>
+            <input
+              type="checkbox"
+              onclick="auto()"
+              class="auto"
+              value="Automatic"
+            />
+            Automatic
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              onclick="manual()"
+              class="manual"
+              value="Manual"
+            />
+            Manual
+          </div>
+        </div>
+
+        <div id="seating">
+          <div><h5>Seating Capacity</h5></div>
+          <div>
+            <input
+              type="checkbox"
+              onclick="fiveseats()"
+              class="fiveseats"
+              value="5 seats"
+            />
+            5 seats
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              onclick="sevenseats()"
+              class="sevenseats"
+              value="7 seats"
+            />
+            7 seats
+          </div>
+        </div>
+      </div>
+
+      <!-- sidebar - segemts/bands etc starts  -->
+
+
+      <!-- carsection starts  -->
+
+      <div class="carsection"></div>
+    </main>
+
+    <!-- carsection ends ---- carsection is done in js file -->
+
+
+    <!-- Footer part start -->
+    <footer>
+      <div id="rent">
+        <h5>Rent car by Make</h5>
+        <p>Maruti | Hyundai | Mahindra | Honda | Toyota | Ford</p>
+      </div>
+      <div id="rent">
+        <h5>Rent car by Model</h5>
+        <p>
+          Grand i10 | Scorpio | Celerio | Baleno | Swift | Swift Dzire | Ciaz |
+          Xcent | Innova Crysta | Ciaz AT | Creta | KUV100 | Alto K10 | Eon |
+          Brezza | Santro MT | Santro AT | Wagon R | Swift AT | XUV300 | Ritz |
+          Swift Dzire Tour | XUV | Ertiga | Celerio MT | Elite i20 | Marazzo |
+          Verna AT | Verna MT | Elite i20 AT | Grand i10 AT | Creta AT | Brezza
+          AT | Baleno AT | Alto 800 | City AT | Venue AT | City (P) | Amaze (P)
+          | Baleno (P) | XUV300 (P) | Etios Liva | Wagon R AT | Elite i20 (P) |
+          Grand i10 (P) | Swift Dzire AT (P) | Verna MT (P) | Swift (P) | Swift
+          Dzire (P) | Creta (P) | EcoSport (P) | Venue MT
+        </p>
+      </div>
+      <div id="rent">
+        <h5>Rent car by Body Type</h5>
+        <p>Hatchback | Sedan | SUV | MUV</p>
+      </div>
+
+      <div id="cities">
+        <div><h3>Serviceable Cities</h3></div>
+        <div id="citylist">
+          <div>
+            <p>Car Rental in Bangalore</p>
+            <p>Car Rental in Hyderabad</p>
+            <p>Car Rental in Mumbai</p>
+            <p>Car Rental in Delhi-NCR</p>
+            <p>Car Rental in Chennai</p>
+            <p>Car Rental in Pune</p>
+            <p>Car Rental in Kolkata</p>
+            <p>Car Rental in Ahmedabad</p>
+          </div>
+          <div>
+            <p>Car Rental in Bhubaneswar</p>
+            <p>Car Rental in Chandigarh</p>
+            <p>Car Rental in Coimbatore</p>
+            <p>Car Rental in Jaipur</p>
+            <p>Car Rental in Kochi</p>
+            <p>Car Rental in Mangalore</p>
+            <p>Car Rental in Mysore</p>
+            <p>Car Rental in Nagpur</p>
+          </div>
+          <div>
+            <p>Car Rental in Surat</p>
+            <p>Car Rental in Tirupati</p>
+            <p>Car Rental in Trivandrum</p>
+            <p>Car Rental in Vadodara</p>
+            <p>Car Rental in Vijayawada</p>
+            <p>Car Rental in Vizag</p>
+          </div>
+        </div>
+      </div>
+      <div id="box2">
+        
+        <div id="left">
+          
+            <img src="https://www.revv.co.in/imgs/revvLogo.png" alt="">
+            <div id="insta" >
+              <img   src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/social/facebook_hover.png" alt="">
+              <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/social/twitter_hover.png">
+              <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/social/instagram_hover.png" >
+              <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/social/youtube_hover.png">
+              <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/social/linkedIn_hover.png">
+            </div>
+            <p class="reserved">© 2022 Primemover Mobility Technologies Pvt Ltd. All rights reserved</div>
+        
+        
+        <div id="middle">
+          <p>Home</p>
+          <p>Subscriptions</p>
+          <p>FAQ</p>
+          <P>Policy</P>
+          <p>Blog</p>
+        </div>
+        <div id="end">
+          <h6>Have Questions?</h6>
+          <p>24/7 Customer Support<p></p>
+          <h5>Contact us</h5>
+          <h5>+91-9250035555</h5>            
+          <h5>care@revv.co.in</h5> 
+        </div>
+       </div>
+      </div>
+
+      <div id="text">
+        <div>
+          <h6>Car Rental in Bangalore starting from INR 41 per Hour</h6>
+          <p>
+            The world is getting smaller by the day, and yet every time you step
+            out of your home you need a car to take you from one place to
+            another. While owning a car is definitely no longer just a dream for
+            the vast majority of people, there are even more affordable and
+            smarter choices available such as car rental services. With
+            unmatched ease and comfort of car rental or car hire services, this
+            gives you a fully maintained vehicle whenever you need but without
+            the hassles of maintaining it. Through its car rental services, Revv
+            helps the residents of Bangalore for travelling around and even
+            visit nearby tourist places using its huge fleet of different models
+            of cars.
+          </p>
+        </div>
+        <div>
+          <h6>Best Car Rental in Bangalore by Revv</h6>
+          <p>
+            Revv is one of the most premier providers of Car rental services in
+            Bangalore that has the popular car brands such as Honda, Ford,
+            Mahindra, Maruti, Hyundai, Volkswagen, and Toyota. You get the
+            freedom to choose even a different make and model of car for each
+            occasion with packages available on hourly, daily, weekly, monthly
+            and yearly modes. You can also choose between MUV, SUV, Sedan,
+            Hatchback type of cars based on your comfort and the number of
+            people travelling. With no limit on maximum distance you get the
+            ultimate driving experience with no worries of maintenance or extra
+            charges.
+          </p>
+        </div>
+        <div>
+          <h6>Choice of best Cars for Hire in Bangalore by Revv</h6>
+          <p>
+            The most popular option for renting a car in Bangalore is through
+            Revv, as you can choose from a variety of options and even have the
+            freedom to experiment and choose a car that you feel best fits your
+            needs. If you have a bigger family or simply want to take an
+            adventurous drive, you can choose an SUV such as Toyota Innova, Ford
+            EcoSport, Maruti Brezza, Hyundai Creta or Mahindra XUV. For city
+            driving on compact Bangalore roads, you can choose a hatchback such
+            as Hyundai Grand i10, Hyundai Elite i20, Maruti Swift or the newer
+            Baleno or if you need some additional trunk space choose a Sedan. In
+            the Sedan class the popular choices in Bangalore are Honda City,
+            Maruti Swift Dzire, Hyundai Xcent, and Volkswagen Vento. You can
+            look into the options with Automatic or Manual Transmission for ease
+            of driving and find the joy of driving at your own pace with no
+            liabilities.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+
+  <!--footer part end  -->
+
+
+   
+  </body>
 </html>
+<script src="./scripts/allCarsData.js"></script>
+<script src="./scripts/product.js"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+  crossorigin="anonymous"
+></script>
