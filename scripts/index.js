@@ -79,7 +79,7 @@ document.querySelector("#search").addEventListener("click", () => {
   var city = document.querySelector("#display").innerText;
   var start = document.querySelector("#start-time").value;
   var end = document.querySelector("#end-time").value;
-  // console.log(city, start, end);
+  console.log(city, start, end);
   var book = {
     city: city,
     start: start,
