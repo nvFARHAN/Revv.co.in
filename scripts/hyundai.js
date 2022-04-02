@@ -29,7 +29,14 @@ function handlePlusMinus (e) {
 }
 
 
-
-
-
+var city = document.querySelectorAll(".city");
+for (var i = 0; i < city.length; i++) {
+  city[i].addEventListener("click", () => {
+    var display = document.querySelector("#display");
+    display.innerText = event.target.innerText;
+    event.target.innerText += "        ";
+    event.target.style.color = "#0dbaba";
+    event.target.style.backgroundColor = "#cbe3e8";
+  });
+}
 

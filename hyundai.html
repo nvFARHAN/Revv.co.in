@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="hyundai.css">
+    <title>Hyundai Cars Subscription</title>
+    <link rel="stylesheet" href="./styles/hyundai.css">
 
     <script src="https://kit.fontawesome.com/512d73515a.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -24,45 +24,96 @@
 </head>
 <body>
     <!-- Header. -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div class="container">
           <button
             class="navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand" href="#"
+          <a class="navbar-brand position-relative me-5" href="index.html"
             ><img
               src="https://www.revv.co.in/grapheneImages/newopen/logo.svg"
               alt="logo"
-          /></a>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav d-flex flex-row ms-auto">
-              <button class="btn btn-outline-success me-2" type="button">
-                Hyundai Subscription
-              </button>
-              <button class="btn btn-outline-success me-2" type="button">
-                Mahindra Subscription
-              </button>
-              <a class="nav-link" href="#">FAQs</a>
-              <a class="nav-link" href="#"
-                ><img
-                  src="https://www.revv.co.in/grapheneImages/newopen/ic-web-profile-login.svg"
-                  alt="loginLogo"
-                />
-                Login or Signup</a
-              >
+            />
+            <p id="logo-txt">Sanitized. Safe</p>
+          </a>
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <div class="offcanvas-title" id="offcanvasNavbarLabel">
+                <div class="d-flex">
+                  <div>
+                    <!-- <img
+                      src="https://www.revv.co.in/grapheneImages/newopen/logo.svg"
+                      style="height: 36px"
+                    /> -->
+                  </div>
+                  <span class="text-light display-2">Revv</span>
+                </div>
+              </div>
+              <button
+                type="button"
+                class="btn-close text-reset ms-0"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item d-none d-lg-block">
+                  <a href=""
+                    ><button class="btn btn-outline-success me-2" type="button">
+                      <b>Mahindra</b> Subscription
+                    </button></a
+                  >
+                </li>
+                <li class="nav-item d-none d-lg-block">
+                  <a href="#"
+                    ><button class="btn btn-outline-success me-2" type="button">
+                      <b>Hyundai</b> Subscription
+                    </button></a
+                  >
+                </li>
+                <li class="nav-item d-block d-lg-none">
+                  <a class="nav-link" href="#"><b>Mahindra</b> Subscription</a>
+                </li>
+                <li class="nav-item d-block d-lg-none">
+                  <a class="nav-link" href="#"><b>Hyundai</b> Subscription</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">FAQs</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="button3"
+                    data-bs-toggle="modal"
+                    href="#exampleModalToggle"
+                    ><img
+                      src="https://www.revv.co.in/grapheneImages/newopen/ic-web-profile-login.svg"
+                      alt="loginLogo"
+                    />
+                    Login or Signup</a
+                  >
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </nav>
+  
     <!-- header end  -->
+
+
     <div id="subsbox">
         
         <div class="leftsubsbox" > 
@@ -73,47 +124,114 @@
             </div>
 
             <div class="inputbox"> 
+                
                 <div class="inputline1"> 
-                   
-                    <div>
-                        <img src="https://img.icons8.com/ios/344/marker--v2.png">
-                        <div class="ip"> 
- 
-                        
-                        </div>
-
-                        <select name="LOCATION" id="">
-                            <option></option>
-                        </select>
-                    </div>
-
+                <div>
+                    <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/locationIcon.png" alt="">
+                </div> 
+                    
+                    
+                <div
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    class="col-md-12 fw-bold"
+                    id="display"
+                    style=" border: none;
+                    height: 50px;
+                    width: 80%;
+                    font-size: 26px;
+                    border-radius: 5px;"
+                    >
+                        Select city
                 </div>
+
+                <div>
+                    <img style="width: 50%;" src="https://www.revv.co.in/assets/RentalImages/HomeScreen/searchDropdown.svg" alt="">
+                </div> 
+                <!-- modal -->
+        <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+    >
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content modal1">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Select City</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p class="opacity-50">Top Cities</p>
+          <p class="city fw-bold">Bangalore</p>
+          <p class="city fw-bold">Hydrabad</p>
+          <p class="city fw-bold">Delhi-NCR</p>
+          <p class="city fw-bold">Chennai</p>
+          <p class="city fw-bold">Pune</p>
+          <hr />
+          <p class="opacity-50">Other Cities</p>
+          <p class="city">kolkata</p>
+          <p class="city">Ahmedabad</p>
+          <p class="city">Bhubaneswar</p>
+          <p class="city">Chandigarh</p>
+          <p class="city">Coimbatore</p>
+          <p class="city">Jaipur</p>
+          <p class="city">Kochi</p>
+          <p class="city">Mangalore</p>
+          <p class="city">Mysore</p>
+          <p class="city">Nagpur</p>
+          <p class="city">Surat</p>
+          <p class="city">Tirupati</p>
+          <p class="city">Trivandrum</p>
+          <p class="city">Vadodara</p>
+          <p class="city">Vijayawada</p>
+          <p class="city">Vizag</p>
+        </div>
+      </div>
+    </div>
+  </div>
+               
+                    
+                </div>
+                <hr style="margin-top: -1%;" >
+ <!-- <<<modal end  -->
+     
                 <div class="inputline2" > 
                     <div class="line2box1" >
-
+                        
                         <div>
                             <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/calenderIcon.png" style="height: 24px;">
                         </div>
 
                         <div>
                             <p>START DATE</p>
+                            <input type="date" name="" id="">
                         </div>
 
                         <div>
-                            <i class="fa-solid fa-caret-down"></i>
+                            <img style="width: 100%;" src="https://www.revv.co.in/assets/RentalImages/HomeScreen/searchDropdown.svg" alt="">
                         </div>
 
                     </div>
-
+                    
                     <div class="line2box2" >
                         <div>
                             <p>DURATION</p>
                             <h3>1,2,3 or 6 Months</h3>
+
                         </div>
                     </div>
 
                 </div>
-
+                
+                <hr style="margin-top: 2%;" >
+                
                 <div class="inputline3" > 
 
                     <div  >
@@ -143,7 +261,11 @@
     </div>
     <!-- subs box end  -->
     <!-- how it works start -->
+
+    
+
     <div id="howitworks">
+        
        
         <div class="rowcontainer-howitworks">  
             <div> 
@@ -155,7 +277,7 @@
 
                 <div class="box1"> 
                     <div class="circle" >
-                        <i class="fa-regular fa-credit-card"></i></i>
+                       <p> <i class="fa-regular fa-credit-card "></i> </p>
                     </div>
                     <h5> Book & Pay</h5>
                     <p>Pick your favourite car, time and place</p>
@@ -176,7 +298,7 @@
                 <!-- third box -->
 
                 <div class="box1"> 
-                    <div class="circle" >
+                    <div class="circle  " >
                         <img class="wheel" src="https://www.revv.co.in/imgs/icons/wheel.png">
                     </div>
                     <h5> Drive</h5>
@@ -490,6 +612,61 @@
         </p>
 
     </div>
+
+            <!-- Scrollable modal -->
+            <!-- Button trigger modal -->
+            <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Launch static backdrop modal
+            </button> -->
+            
+            <!-- Modal -->
+            <!-- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Select City</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <ul >
+                        <li> Top Cities</li>
+                        <br>    
+
+                        <li class="form" > Banglore</li>
+                        <li class="form" > Hyderabad</li>
+                        <li class="form" > Mumbai</li>
+                        <li class="form" > Delhi NCR</li>
+                        <li class="form" > Chennai</li>
+                        <li class="form" > Pune</li>
+                        
+                        <hr>
+                        <br>
+                        <p style="font-family: Poppins; font-size: 26px; " >Other Cities</p>
+                            <li class="form" >  Kolkata</li>
+                            <li class="form" >  Ahmedabad</li>
+                            <li class="form" >  Bhubaneswar</li>
+                            <li class="form" >  Chandigarh</li>
+                            <li class="form" >  Coimbatore</li>
+                            <li class="form" >  Jaipur</li>
+                            <li class="form" >  Kochi</li>
+                            <li class="form" >  Mangalore</li>
+                            <li class="form" >  Mysore</li>
+                            <li class="form" >  Nagpur</li>
+                            <li class="form" >  Surat</li>
+                            <li class="form" >  Tirupati</li>
+                            <li class="form" >  Trivandrum</li>
+                            <li class="form" >  Vadodara</li>
+                            <li class="form" >  Vijayawada</li>
+                            <li class="form" >  Vizag</li>
+                            
+                    
+                    </ul>
+                    </div>
+                    
+                </div>
+            </div>
+                 -->
+                
     
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -500,7 +677,6 @@
 </html>
 <script
 src="https://kit.fontawesome.com/24c494a6b6.js"
-crossorigin="anonymous"
-></script>
+crossorigin="anonymous"></script>
 
-<script src="hyundai.js"></script>
+<script src="./scripts/hyundai.js"></script>
