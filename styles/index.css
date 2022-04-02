@@ -187,7 +187,7 @@ section li::before {
   background-color: #fff;
   border-radius: 12px;
   padding: 10px;
-  margin: 4px 5px 0;
+  /* margin: 4px 5px 0; */
   cursor: pointer;
 }
 #form > div > div > div > h2 {
@@ -216,7 +216,7 @@ section li::before {
   border-bottom: 1px solid #c6c7d6;
 }
 #form > div:nth-child(3) > div:nth-child(2) {
-  border-right: 1px solid #c6c7d6;
+  /* border-right: 1px solid #c6c7d6; */
 }
 #form img {
   height: 28px;
@@ -337,7 +337,11 @@ section li::before {
   line-height: 1.33;
   font-weight: 600;
 }
-
+.link {
+  color: black;
+  text-decoration: none;
+}
+.link:hover,
 .link a:hover {
   color: teal;
   cursor: pointer;
@@ -399,5 +403,11 @@ section li::before {
     left: -6px;
     padding: 1em;
     margin: 1em;
+  }
+}
+@media screen and (max-width: 767px) {
+  #start-time,
+  #end-time {
+    margin-left: 1em;
   }
 }

@@ -80,8 +80,14 @@ document.querySelector("#search").addEventListener("click", () => {
   var start = document.querySelector("#start-time").value;
   var end = document.querySelector("#end-time").value;
   // console.log(city, start, end);
+  var book = {
+    city: city,
+    start: start,
+    end: end,
+  };
+  localStorage.setItem("booking", JSON.stringify(book));
   if (city != "Select city" && start != "" && end != "") {
-    window.location.href = "#";
+    window.location.href = "product.html";
   }
 });
 
