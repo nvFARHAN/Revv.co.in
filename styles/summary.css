@@ -1,0 +1,43 @@
+#logo-txt {
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  left: 25px;
+  bottom: -18px;
+}
+.offcanvas-header {
+  margin-bottom: 0px;
+  padding: 22px 26px;
+  height: 125px;
+  background-image: linear-gradient(
+    to left,
+    rgb(28, 171, 162),
+    rgb(28, 127, 171)
+  );
+}
+.bookBtn {
+  border-radius: 4px;
+  background-color: #0ebaba;
+  color: #fff;
+  box-shadow: none !important;
+  min-width: 94px;
+  min-height: 36px;
+  border: none;
+}
+.titleHeading {
+  width: 100%;
+  border-bottom: 2px solid #8caead;
+  line-height: 0.1em;
+  margin: 28px 0 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.titleHeadingSpan {
+  background: #f1f1f1;
+  padding: 0 10px;
+  font-size: 18px;
+}
+.informationCard {
+  background-color: #f1f1f1 !important;
+  margin: 0 10px 10px;
+}
