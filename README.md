@@ -1,0 +1,43 @@
+# Revv.co.in
+
+Revv is an Indian car-rental startup that offers multiple options to meet all your self-drive needs. The company was founded in2015 and currently operates in 11 cities in India namely: Banglore, Hyderabad, Chennai, Mumbai, Pune, Delhi NCR, Chandigarh, Jaipur, Vizag, Mysore, and Coimbatore.
+
+To date, Revv has fleet of around 1000 vehicles and claims have served around 300,000 users. It has its main office located at Gurgaon, India.
+
+With Revv, you can rent a car at atime that is convenient to you and get it delivered right to you doorstep. Apart from an hourly rate starting at just Rs.333/hr
+
+About this project: 🙌
+
+This is a team project, built by us in the Construct Week - Unit 2 at Masai School.
+
+   * Here is the link of our website live on netlify: https://incredible-custard-b1be29.netlify.app/index.html
+
+ Our Team Members ❤️:
+ * Nachiket Lele.
+ * Bhasker Shrimali.
+ * Md Farhan Nawaz.
+ * Adil Ahmed Qureshi.
+ 
+ Pages & Features 👇:
+ * Home Page.
+ * Login & SignUp Page.
+ * Hyundai & Maruthi Page.
+ * Summary Page.
+ * FAQ page.
+ * Payment page.
+
+ Tech Stack:
+ * HTML.
+ * CSS.
+ * JavaScript.
+
+ Learning :-
+ * We all became proficient in reading the code of team members.
+ * Our code writing style became cleaner as we had to think while writing code that other team members will be reading.
+ * We had to learn about many CSS properties that we didn't know before.
+ * Our skills in JavaScript and DOM manipulation became better.
+ * We all learned how to plan a project and execute that.
+
+ Check our website at :
+ * GitHub- https://nvfarhan.github.io/Revv.co.in/
+ * Netlify- https://incredible-custard-b1be29.netlify.app
