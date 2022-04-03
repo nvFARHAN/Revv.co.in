@@ -116,7 +116,7 @@
           <div class="row">
             <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
               <div>
-                <b><span class="fontLg">Hyundai Creta</span></b>
+                <b><span class="fontLg" id="name">Hyundai Creta</span></b>
               </div>
               <br />
               <img
@@ -126,13 +126,13 @@
               /><br />
               <div class="row col-12">
                 <div class="col-4">
-                  <span>5 seats</span>
+                  <span id="seats">5 seats</span>
                 </div>
-                <div class="col-4">
+                <div id="type" class="col-4">
                   <span class="im im-shift-auto" aria-hidden="true"></span>
                   Manual
                 </div>
-                <div class="col-4">
+                <div id="fuel" class="col-4">
                   <span class="im im-diesel" aria-hidden="true"></span>
                   Diesel
                 </div>
@@ -145,11 +145,11 @@
               <br />
               <div class="row">
                 <div class="col-5">
-                  <b> <span class="dateSpan">Wed, 6 Apr 12:00 </span></b>
+                  <b> <span id="start" class="dateSpan">Wed, 6 Apr 12:00 </span></b>
                 </div>
                 <div class="col-2 toIcon"></div>
                 <div class="col-5">
-                  <b><span class="dateSpan">Thu, 7 Apr 17:00 </span></b>
+                  <b><span id="end1" class="dateSpan">Thu, 7 Apr 17:00 </span></b>
                 </div>
               </div>
               <br />
@@ -158,12 +158,12 @@
               </div>
               <br /><br />
               <div>
-                <span class="fontMd"><b>Bangalore</b></span
+                <span class="fontMd me-2"><b id="cityTop">Bangalore</b></span
                 ><a>Change City</a>
               </div>
               <br />
               <div>
-                <span class="fontMd"
+                <span class="fontMd me-2"
                   ><b>Pricing Plan: Includes 145 kms, excludes fuel</b></span
                 ><a>Change plan</a>
               </div>
@@ -241,14 +241,21 @@
               class="table fontMd col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 tableFairbreakup"
             >
               <tr>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
                 <td>Base fare</td>
-                <td><i class="fa fa-inr"></i> 3799</td>
+                <td>3799</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
               </tr>
               <tr>
                 <td>Doorstep delivery &amp; pickup</td>
-                <td><i class="fa fa-inr"></i> 400</td>
+                <td>400</td>
               </tr>
-              <div></div>
               <tr>
                 <td></td>
                 <td></td>
@@ -258,10 +265,13 @@
                 <td>Included</td>
               </tr>
               <tr>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
                 <td>Refundable security deposit</td>
                 <td><i class="fa fa-inr"></i> 1000</td>
               </tr>
-              <tr></tr>
               <tr>
                 <td></td>
                 <td></td>
@@ -276,34 +286,25 @@
                       id="undefined-undefined-Promocode-34148"
                       value=""
                     />
-                    <div>
-                      <hr aria-hidden="true" />
-                      <hr aria-hidden="true" />
-                    </div>
                   </div>
                 </td>
                 <td>
-                  <button label="Apply" class="bookBtn mobBookBtn">
+                  <button id="apply" label="Apply" class="bookBtn mobBookBtn">
                     Apply
                   </button>
                 </td>
               </tr>
               <tr>
-                <td colspan="2"></td>
-              </tr>
-              <tr>
                 <td></td>
                 <td></td>
               </tr>
               <tr>
-                <td colspan="2"></td>
+                <td id="totalHead" class="fontLg">Total</td>
+                <td id="total" class="fontLg">5199</td>
               </tr>
               <tr>
-                <td class="fontLg">Total</td>
-                <td class="fontLg"><i class="fa fa-inr"></i> 5199</td>
-              </tr>
-              <tr>
-                <td colspan="2"><br /></td>
+                <td></td>
+                <td></td>
               </tr>
               <tr>
                 <td>Kms limit</td>
@@ -318,12 +319,24 @@
                 <td>Excluded</td>
               </tr>
               <tr>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
                 <td>Extra kms charge</td>
                 <td><i class="fa fa-inr"></i> 16/km</td>
               </tr>
               <tr>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
                 <td>Tolls, Parking &amp; Inter-state taxes</td>
                 <td>To be paid by you</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
               </tr>
             </table>
             <div class="row no-padding-row">
@@ -386,11 +399,189 @@
             <br />
             <div class="row col-12">
               <div>
-                <br /><label></label><button class="bookBtn">Proceed</button>
+                <br /><label></label
+                ><button
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  class="bookBtn"
+                >
+                  Proceed
+                </button>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content modal1">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Terms & Conditions
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="opacity-50">Important points for your booking</p>
+            <p class="city fw-bold">
+              To take the delivery of the car, you will
+              <b>need to be present in person</b> and show these documents to
+              our delivery executive.
+            </p>
+            <ul>
+              <li>
+                <b>Original hard copy of the driving license</b>, issued at
+                least one year prior, and showing your age as 21 years or more.
+              </li>
+              <li><b>Original hard copy of ID proof</b> (Aadhar/Passport)</li>
+              <li>
+                <b>No Digilocker</b>, soft copy, photocopy will be accepted.
+              </li>
+            </ul>
+            <hr />
+            <div class="border p-1 my-3 rounded-3">
+              <p class="opacity-50">
+                Please note: In absence of original hard copy of documents,
+                <b>the car will NOT be handed over</b> and
+                <b>full cancellation charges will apply.</b>
+              </p>
+            </div>
+            <a href="payment.html">
+              <button class="bookBtn">Agree and continue</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="cities" class="container-fluid bg-dark text-light py-5">
+      <div class="ms-5"><h3>Serviceable Cities</h3></div>
+      <div id="citylist" class="d-flex justify-content-evenly">
+        <div class="">
+          <p>Car Rental in Bangalore</p>
+          <p>Car Rental in Hyderabad</p>
+          <p>Car Rental in Mumbai</p>
+          <p>Car Rental in Delhi-NCR</p>
+          <p>Car Rental in Chennai</p>
+          <p>Car Rental in Pune</p>
+          <p>Car Rental in Kolkata</p>
+          <p>Car Rental in Ahmedabad</p>
+        </div>
+        <div class="">
+          <p>Car Rental in Bhubaneswar</p>
+          <p>Car Rental in Chandigarh</p>
+          <p>Car Rental in Coimbatore</p>
+          <p>Car Rental in Jaipur</p>
+          <p>Car Rental in Kochi</p>
+          <p>Car Rental in Mangalore</p>
+          <p>Car Rental in Mysore</p>
+          <p>Car Rental in Nagpur</p>
+        </div>
+        <div class="">
+          <p>Car Rental in Surat</p>
+          <p>Car Rental in Tirupati</p>
+          <p>Car Rental in Trivandrum</p>
+          <p>Car Rental in Vadodara</p>
+          <p>Car Rental in Vijayawada</p>
+          <p>Car Rental in Vizag</p>
+        </div>
+      </div>
+    </div>
+    <div id="box2">
+      
+      <div id="left">
+        
+          <img src="https://www.revv.co.in/imgs/revvLogo.png" alt="">
+          <div id="insta" >
+            <img   src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/social/facebook_hover.png" alt="">
+            <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/social/twitter_hover.png">
+            <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/social/instagram_hover.png" >
+            <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/social/youtube_hover.png">
+            <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/social/linkedIn_hover.png">
+          </div>
+          <p class="reserved">© 2022 Primemover Mobility Technologies Pvt Ltd. All rights reserved</div>
+      
+      
+      <div id="middle">
+        <p>Home</p>
+        <p>Subscriptions</p>
+        <p>FAQ</p>
+        <P>Policy</P>
+        <p>Blog</p>
+      </div>
+      <div id="end">
+        <h6>Have Questions?</h6>
+        <p>24/7 Customer Support<p></p>
+        <h5>Contact us</h5>
+        <h5>+91-9250035555</h5>            
+        <h5>care@revv.co.in</h5> 
+      </div>
+     </div>
+    </div>
+
+    <div id="text">
+      <div>
+        <h6>Car Rental in Bangalore starting from INR 41 per Hour</h6>
+        <p>
+          The world is getting smaller by the day, and yet every time you step
+          out of your home you need a car to take you from one place to
+          another. While owning a car is definitely no longer just a dream for
+          the vast majority of people, there are even more affordable and
+          smarter choices available such as car rental services. With
+          unmatched ease and comfort of car rental or car hire services, this
+          gives you a fully maintained vehicle whenever you need but without
+          the hassles of maintaining it. Through its car rental services, Revv
+          helps the residents of Bangalore for travelling around and even
+          visit nearby tourist places using its huge fleet of different models
+          of cars.
+        </p>
+      </div>
+      <div>
+        <h6>Best Car Rental in Bangalore by Revv</h6>
+        <p>
+          Revv is one of the most premier providers of Car rental services in
+          Bangalore that has the popular car brands such as Honda, Ford,
+          Mahindra, Maruti, Hyundai, Volkswagen, and Toyota. You get the
+          freedom to choose even a different make and model of car for each
+          occasion with packages available on hourly, daily, weekly, monthly
+          and yearly modes. You can also choose between MUV, SUV, Sedan,
+          Hatchback type of cars based on your comfort and the number of
+          people travelling. With no limit on maximum distance you get the
+          ultimate driving experience with no worries of maintenance or extra
+          charges.
+        </p>
+      </div>
+      <div>
+        <h6>Choice of best Cars for Hire in Bangalore by Revv</h6>
+        <p>
+          The most popular option for renting a car in Bangalore is through
+          Revv, as you can choose from a variety of options and even have the
+          freedom to experiment and choose a car that you feel best fits your
+          needs. If you have a bigger family or simply want to take an
+          adventurous drive, you can choose an SUV such as Toyota Innova, Ford
+          EcoSport, Maruti Brezza, Hyundai Creta or Mahindra XUV. For city
+          driving on compact Bangalore roads, you can choose a hatchback such
+          as Hyundai Grand i10, Hyundai Elite i20, Maruti Swift or the newer
+          Baleno or if you need some additional trunk space choose a Sedan. In
+          the Sedan class the popular choices in Bangalore are Honda City,
+          Maruti Swift Dzire, Hyundai Xcent, and Volkswagen Vento. You can
+          look into the options with Automatic or Manual Transmission for ease
+          of driving and find the joy of driving at your own pace with no
+          liabilities.
+        </p>
       </div>
     </div>
   </body>
@@ -399,4 +590,5 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"
   ></script>
+  <script src="./scripts/summary.js"></script>
 </html>

@@ -1,3 +1,8 @@
+var myEmail = localStorage.getItem("#user", myEmail) || "";
+if (myEmail != "") {
+  document.querySelector("#button3").innerText = myEmail;
+}
+
 // console.log("hey product");
 
 let dataFrom = JSON.parse(localStorage.getItem("allCars"));
@@ -425,12 +430,12 @@ function resetfunction() {
   render(dataFrom);
 }
 
-var bookedcar = [];
+// var bookedcar = [];
 function bookfunctions(data) {
-  bookedcar.push(data);
-  console.log(bookedcar);
+  // bookedcar.push(data);
+  // console.log(bookedcar);
 
-  localStorage.setItem("bookedcar", JSON.stringify(bookedcar));
+  localStorage.setItem("bookedcar", JSON.stringify(data));
 
   window.location.href = "summary.html";
 }
@@ -517,3 +522,4 @@ var book = JSON.parse(localStorage.getItem("booking"));
 document.querySelector("#input1").value = book.city;
 document.querySelector("#input2").value = book.start;
 document.querySelector("#input3").value = book.end;
+document.querySelector("#cityTop").innerText = book.city;

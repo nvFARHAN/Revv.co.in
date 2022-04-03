@@ -341,14 +341,16 @@ select > option {
   padding: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  display: flex;
+  justify-content: center;
   /* position: fixed;
         z-index: auto; */
 }
 #modified > input {
-  width: 250px;
-  margin-left: -5px;
-  height: 40px;
-
+  /* width: 250px; */
+  /* margin-left: -5px; */
+  /* height: 40px; */
+  padding: 0.5em;
   border: 0.1px solid rgb(163, 155, 155);
 }
 .input1 {
@@ -356,13 +358,14 @@ select > option {
   border-bottom-left-radius: 8px;
 }
 #modified > button {
-  width: 250px;
-  margin-left: -13px;
-  height: 40px;
+  /* width: 250px; */
+  /* margin-left: -13px; */
+  /* height: 40px; */
+  padding: 0.5em;
   border: none;
-  border-radius: 8px;
+  /* border-radius: 8px; */
   background-color: #1c88aa;
-  margin-top: 5px;
+  /* margin-top: 5px; */
   color: white;
   font-size: large;
   font: bolder;

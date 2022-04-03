@@ -1,3 +1,10 @@
+var myEmail = localStorage.getItem("#user", myEmail) || "";
+if (myEmail != "") {
+  document.querySelector(
+    "#button3"
+  ).innerHTML = `${myEmail} <a class="nav-link d-inline" href=""><b>Logout</b></a>`;
+}
+
 document.querySelector("#form1").addEventListener("submit", myLogin);
 var myUser = JSON.parse(localStorage.getItem("details"));
 console.log(myUser);
@@ -17,9 +24,10 @@ function myLogin() {
   }
   if (flag == 1) {
     alert("Login Successful");
-    // window.location.reload();
+
     // window.location.href = "index.html";
-    document.querySelector("#button3").innerText = myEmail;
+    localStorage.setItem("#user", myEmail);
+    window.location.reload();
   } else {
     if (myEmail == "" || myPass == "" || (myEmail == "" && myPass == "")) {
       document.querySelector("#M").innerHTML = "Enter Data";
