@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 #logo-txt {
   font-size: 12px;
   font-weight: 400;
@@ -107,35 +108,35 @@ select > option {
 #segment {
   text-align: left;
   /* border: 1px solid yellow; */
-  padding-left: 50px;
+  padding-left: 3vw;
   line-height: 30px;
 }
 #brand {
   margin-top: 25px;
   text-align: left;
   /* border: 1px solid yellow; */
-  padding-left: 50px;
+  padding-left: 3vw;
   line-height: 30px;
 }
 #fueltype {
   margin-top: 25px;
   text-align: left;
   /* border: 1px solid yellow; */
-  padding-left: 50px;
+  padding-left: 3vw;
   line-height: 30px;
 }
 #transmission {
   margin-top: 25px;
   text-align: left;
   /* border: 1px solid yellow; */
-  padding-left: 50px;
+  padding-left: 3vw;
   line-height: 30px;
 }
 #seating {
   margin-top: 25px;
   text-align: left;
   /* border: 1px solid yellow; */
-  padding-left: 50px;
+  padding-left: 3vw;
   line-height: 30px;
 }
 .carsection {
@@ -335,27 +336,29 @@ select > option {
   color: #0ebaba;
 }
 #modified {
-  position: -webkit-sticky;
   text-align: center;
   border: 1px solid rgb(216, 215, 215);
-  padding: 10px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   display: flex;
   justify-content: center;
-  /* position: fixed;
-        z-index: auto; */
+  width: 100vw;
+  /* padding: 10px; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 #modified > input {
-  /* width: 250px; */
-  /* margin-left: -5px; */
-  /* height: 40px; */
+  /* width: 25vw;
+  margin-left: 0vw;
+  height: 40px;
+  text-align: center;
+
+  border: 0.1px solid rgb(163, 155, 155); */
   padding: 0.5em;
-  border: 0.1px solid rgb(163, 155, 155);
 }
 .input1 {
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
+  justify-content: space-around;
+  display: flex;
 }
 #modified > button {
   /* width: 250px; */
@@ -375,6 +378,9 @@ select > option {
 /* <!-- media querey --> */
 
 @media all and (min-width: 566px) and (max-width: 1030px) {
+  * {
+    font-size: medium;
+  }
   #add {
     display: none;
   }
@@ -430,11 +436,12 @@ select > option {
     margin-top: 28px;
   }
   #modified {
-    width: 100%;
+    width: 100vw;
     display: flex;
+    justify-content: center;
   }
   #modified > input {
-    width: 30%;
+    width: 20vw;
     margin-left: -5px;
     height: 40px;
 
@@ -445,8 +452,8 @@ select > option {
     border-bottom-left-radius: 8px;
   }
   #modified > button {
-    width: 30%;
-    margin-left: -8px;
+    width: 20vw;
+
     height: 40px;
     border: none;
     border-radius: 10px;
@@ -492,8 +499,9 @@ select > option {
     font-size: medium;
   }
   #modified {
-    width: 100%;
-    display: flex;
+    /* width: 100%;
+    display: flex; */
+    display: none;
   }
   #modified > input {
     width: 30%;
@@ -508,7 +516,8 @@ select > option {
   }
   #modified > button {
     width: 30%;
-    margin-left: -8px;
+    border-top-left-radius: none;
+    border-bottom-left-radius: none;
     height: 40px;
     border: none;
     border-radius: 10px;
@@ -518,5 +527,13 @@ select > option {
     font-size: small;
     font: bolder;
     font-family: "Poppins", sans-serif;
+  }
+  .sidebar {
+    max-width: 35vw;
+  }
+  .sidebar h6,
+  .sidebar h5,
+  .sidebar div {
+    font-size: small;
   }
 }
