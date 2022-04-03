@@ -9,8 +9,7 @@ With Revv, you can rent a car at atime that is convenient to you and get it deli
 About this project: 🙌
 
 This is a team project, built by us in the Construct Week - Unit 2 at Masai School.
-
-   * Here is the link of our website live on netlify: https://incredible-custard-b1be29.netlify.app/index.html
+In this project, we clone a website named “Revv” this is a car rental website, in this project me and my all teammates give all our efforts to make our cloned website more attractive and functional. we made this website in 7 days during our construct week. It was a great journey to work in a team and collaborate with each other. First, we planned how to work and what is the user flow after that we distribute work among members and now we cloned this with great responsibilities and collaboration.
 
  Our Team Members ❤️:
  * Nachiket Lele.
@@ -18,7 +17,7 @@ This is a team project, built by us in the Construct Week - Unit 2 at Masai Scho
  * Md Farhan Nawaz.
  * Adil Ahmed Qureshi.
  
- Pages & Features 👇:
+ Pages 👇:
  * Home Page.
  * Login & SignUp Page.
  * Hyundai & Maruthi Page.
