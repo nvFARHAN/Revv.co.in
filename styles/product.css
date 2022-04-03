@@ -339,19 +339,20 @@ select > option {
   text-align: center;
   border: 1px solid rgb(216, 215, 215);
   display: flex;
+  justify-content: center;
   width: 100vw;
   /* padding: 10px; */
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
- 
 }
 #modified > input {
-  width: 25vw;
+  /* width: 25vw;
   margin-left: 0vw;
   height: 40px;
   text-align: center;
 
-  border: 0.1px solid rgb(163, 155, 155);
+  border: 0.1px solid rgb(163, 155, 155); */
+  padding: 0.5em;
 }
 .input1 {
   border-top-left-radius: 8px;
@@ -360,12 +361,14 @@ select > option {
   display: flex;
 }
 #modified > button {
-  width: 23vw;
-  
-  height: 40px;
+  /* width: 250px; */
+  /* margin-left: -13px; */
+  /* height: 40px; */
+  padding: 0.5em;
   border: none;
-  border-radius: 8px;
+  /* border-radius: 8px; */
   background-color: #1c88aa;
+  /* margin-top: 5px; */
   color: white;
   font-size: large;
   font: bolder;
@@ -375,7 +378,7 @@ select > option {
 /* <!-- media querey --> */
 
 @media all and (min-width: 566px) and (max-width: 1030px) {
-  *{
+  * {
     font-size: medium;
   }
   #add {
@@ -450,7 +453,7 @@ select > option {
   }
   #modified > button {
     width: 20vw;
-    
+
     height: 40px;
     border: none;
     border-radius: 10px;
@@ -525,12 +528,12 @@ select > option {
     font: bolder;
     font-family: "Poppins", sans-serif;
   }
-  .sidebar{
+  .sidebar {
     max-width: 35vw;
   }
-  .sidebar h6, .sidebar h5,.sidebar div{
+  .sidebar h6,
+  .sidebar h5,
+  .sidebar div {
     font-size: small;
   }
-  
-  
 }
