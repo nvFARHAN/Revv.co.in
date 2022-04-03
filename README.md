@@ -32,5 +32,5 @@ In this project, we clone a website named “Revv” this is a car rental websit
  Check our website at :
  * GitHub- https://nvfarhan.github.io/Revv.co.in/
  * Netlify- https://incredible-custard-b1be29.netlify.app
- * https://medium.com/@shrimalibhaskar2398/5432691f9dcf (Blog)
- * https://drive.google.com/file/d/1ib4oYGZfM4e48SlpLVlIi9nLVNTJOVcJ/view?usp=sharing (Video)
+ * Blog- https://medium.com/@shrimalibhaskar2398/5432691f9dcf
+ * Video- https://drive.google.com/file/d/1ib4oYGZfM4e48SlpLVlIi9nLVNTJOVcJ/view?usp=sharing
