@@ -25,3 +25,7 @@ document.querySelector("#apply").addEventListener("click", () => {
     document.querySelector("#total").innerText = "3639";
   }
 });
+
+document.querySelector("#pay").addEventListener("click", () => {
+  window.location.href = "payment.html";
+});
